@@ -37,7 +37,7 @@
 
 var app =  {
 	feedURL : URL_TWIT,
-    MAX_ITEMS: 10,
+    MAX_ITEMS: 3,
 	feed    : null, 
 	start : function() {
 
@@ -76,7 +76,7 @@ var app =  {
                  this.flipflop=false; return 'color:black';
              } 
              else { 
-                 this.flipflop=true; return 'color:gray';
+                 this.flipflop=true; return 'color:rgb(100,50,0)';
              } 
     },
 
@@ -120,7 +120,7 @@ var app =  {
 
 				this.total--;
 			} 
-			setTimeout( function () { self.render() }, 9999);
+			setTimeout( function () { self.render() }, 19999);
 		} 
 	},
 
@@ -148,7 +148,8 @@ var app =  {
               out.subtitle='';
               out.body='';
               out.src=objs[k].user.profile_image_url;
-            self.tweetQueue.push( '<div class=""><img style="float:left;margin-right:10px;" src="'+out.src+'" /><h3>'+out.title+'</h3><div class="desc">'+out.subtitle+'</div><div class="descFull" style="display:none">'+out.body+'</div></div>' );
+              out.screen = objs[k].user.screen_name;
+            self.tweetQueue.push( '<div class=""><img style="float:left;margin-right:10px;" src="'+out.src+'" /> <h3> <i>(@'+out.screen+') </i>'+out.title+'</h3><div class="desc">'+out.subtitle+'</div><div class="descFull" style="display:none">'+out.body+'</div></div>' );
  //         cc++;
         }
 
