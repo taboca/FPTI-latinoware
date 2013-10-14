@@ -6,10 +6,10 @@ var app =  {
     refElement   : null, 
     imageNumber  : 0,
     element      : null,
-    picWidth     : 420,
-    picHeight    : 250,
+    picWidth     : 500,
+    picHeight    : 500,
     picQueue     : null, 
-    totalElements: 1, 
+    totalElements: 4, 
     refContainers: null, 
     refContainerCycle : -1, 
 		
@@ -34,12 +34,12 @@ var app =  {
 		}
 
 		var scopedThis = this;
-       	setTimeout( function () { scopedThis.popPic() }, 195000);
+       	setTimeout( function () { scopedThis.popPic() }, 12000);
 	},
 
 	init : function() {
 		this.feed = new t8l.feeds.Feed(this.feedURL);
-		this.feed.setResultFormat(t8l.feeds.Feed.XML_FORMAT);
+		this.feed.setResultFormat('text'); // differs from google now
 		this.feed.setNumEntries(10);
 	},
 
@@ -87,7 +87,7 @@ var app =  {
         this.cycle++;	
         if(this.cycle<=this.totalElements) { 
             var scopedThis = this;
-            setTimeout( function () { scopedThis.popPic() }, 195000);
+            setTimeout( function () { scopedThis.popPic() }, 15000);
         }  else { 
             this.cycle=0;
             this.kickFadeIn();
@@ -95,17 +95,14 @@ var app =  {
 	},
 
 	__feedUpdated : function(result) {
-		var self  = this;
+		this.dataOut = new Array();
 		if(result.error) { }; 
-     		$(result.xmlDocument).find('entry').each(function(){ 
-			var link = $(this).find('link[rel="enclosure"]');
-			if(link.attr("rel") == "enclosure" ) { 
-				var src = link.attr("href");
-                if(src.indexOf("jpg")>-1 || src.indexOf("gif")>-1) {
-                    self.picQueue.push(src);
-                }
-			} 
-		});
+		var text = result.xmlDocument; 
+		var objs = $.parseJSON(text);
+		for( var k in objs) {
+			var src = (objs[k].images.standard_resolution);
+            this.picQueue.push(src.url);
+		} 
 		this.kickFadeIn();
 	}
 }
