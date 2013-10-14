@@ -7,8 +7,10 @@
 # Short-Description:    TelaSocial Node App
 ### END INIT INFO
 
-export PATH=$PATH:/opt/node/bin
-export NODE_PATH=$NODE_PATH:/opt/node/lib/node_modules
+export PATH=$PATH:/usr/local/bin
+export NODE_PATH=$NODE_PATH:/usr/local/lib/node_modules
+
+
 export HOME=/root 
 
 case "$1" in
