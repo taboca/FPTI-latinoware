@@ -13,7 +13,8 @@ export HOME=/root
 
 case "$1" in
   start)
-    /opt/node/bin/forever -p /root/.forever --sourceDir=/home/pi/TelaSocial-Mediator start mediator.js app ./scripts/httpserver.json
+    /opt/node/bin/forever -p /root/.forever --sourceDir=/home/marcio2/TelaSocial-Mediator start mediator.js app ./scripts/httpserver.json
+    /opt/node/bin/forever -p /root/.forever --sourceDir=/home/marcio2/TelaSocial-Mediator start mediator.js app ./scripts/instagram.json
     ;;
   stop)
     exec /opt/node/bin/forever stopall
