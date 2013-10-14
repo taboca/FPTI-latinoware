@@ -46,6 +46,8 @@ function initApp(name, appPath) {
                out.senderr({'result':'error', 'payload': err});
                throw err; 
            }   
+           out.send({'result':'ok'});
+           clearTimeout(timer);
         });
       }
   });
