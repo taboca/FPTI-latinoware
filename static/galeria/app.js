@@ -8,6 +8,7 @@ var app =  {
     element      : null,
     picWidth     : 395,
     picHeight    : 395,
+    timer        : 15000,
     picQueue     : null, 
     totalElements: 4, 
     refContainers: null, 
@@ -34,7 +35,7 @@ var app =  {
 		}
 
 		var scopedThis = this;
-       	setTimeout( function () { scopedThis.popPic() }, 1200);
+       	setTimeout( function () { scopedThis.popPic() }, this.timer);
 	},
 
 	init : function() {
@@ -87,7 +88,7 @@ var app =  {
         this.cycle++;	
         if(this.cycle<=this.totalElements) { 
             var scopedThis = this;
-            setTimeout( function () { scopedThis.popPic() }, 1500);
+            setTimeout( function () { scopedThis.popPic() }, this.timer);
         }  else { 
             this.cycle=0;
             this.kickFadeIn();
