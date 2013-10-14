@@ -6,8 +6,8 @@ var app =  {
     refElement   : null, 
     imageNumber  : 0,
     element      : null,
-    picWidth     : 495,
-    picHeight    : 495,
+    picWidth     : 395,
+    picHeight    : 395,
     picQueue     : null, 
     totalElements: 4, 
     refContainers: null, 
@@ -34,7 +34,7 @@ var app =  {
 		}
 
 		var scopedThis = this;
-       	setTimeout( function () { scopedThis.popPic() }, 12000);
+       	setTimeout( function () { scopedThis.popPic() }, 1200);
 	},
 
 	init : function() {
@@ -87,7 +87,7 @@ var app =  {
         this.cycle++;	
         if(this.cycle<=this.totalElements) { 
             var scopedThis = this;
-            setTimeout( function () { scopedThis.popPic() }, 15000);
+            setTimeout( function () { scopedThis.popPic() }, 1500);
         }  else { 
             this.cycle=0;
             this.kickFadeIn();

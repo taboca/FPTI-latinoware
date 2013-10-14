@@ -12,8 +12,8 @@ $(document).ready(function() {
    register("/main/topheader", "topo", "./header-vertical/index.html", iframeTemplate);
    register("/main/topmiddle", "mid", "http://www.telasocial.com:8888/static/destaques/index.html", iframeTemplate);
    register("/main/bottomsection2", "tweeter", "http://www.telasocial.com:8888/static/twitter-new/index.html", iframeTemplate);
-   register("/main/bottomsection", "identica", "./feed-cicle/index.html", iframeTemplate);
-   register("/main/bottomsection-b", "fotos", "./galeria/index.html", iframeTemplate);
+   register("/main/bottomsection", "identica", "./galeria/index.html", iframeTemplate);
+   register("/main/bottomsection-b", "fotos", "./galeri/index.html", iframeTemplate);
 
    register("/main/climatempo", "clima", "./clima/index.html", iframeTemplate);
    register("/main/hora", "hora", "./tempo/index.html", iframeTemplate);
