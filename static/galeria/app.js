@@ -8,7 +8,7 @@ var app =  {
     element      : null,
     picWidth     : 230,
     picHeight    : 230,
-    timer        : 10000,
+    timer        : 4000,
     picQueue     : null, 
     totalElements: 8, 
     refContainers: null, 
@@ -57,9 +57,13 @@ var app =  {
 				this.refContainerCycle=0;
 			} 
 			var currentContainer = this.refContainers[this.refContainerCycle];
-			currentContainer.innerHTML = "<img id='posterimage"+this.imageNumber+"' src='"+t+"' class='loading'>";
 			these = this;
-			document.getElementById("posterimage"+this.imageNumber).onload = function () { these.imageLoaded() };
+			$(currentContainer).find("img").attr('class','fadeout');
+			setTimeout(function () { 
+				currentContainer.innerHTML = "<img id='posterimage"+these.imageNumber+"' src='"+t+"' class='loading'>";
+				document.getElementById("posterimage"+these.imageNumber).onload = function () { these.imageLoaded() };
+			}, 2000)
+			
 			return true;
 		} 
 

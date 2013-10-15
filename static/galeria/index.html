@@ -21,24 +21,35 @@
 
     <style>
     span { 
-		padding:8px;
+		padding:12px;
    	} 
     /* 
 	img { box-shadow: 3px 3px 5px black; } 
     */
 
 	img.loading { 
+    -moz-transition-property:-moz-transform; 
+    -moz-transform: rotateY(0deg) rotateX(90deg); 
+    -moz-transition-duration:2s; 
 		opacity:0;
 	} 
     /* no styles accel
-		-moz-transition-property:opacity; 
-		-moz-transform: rotateY(0deg) rotateX(0deg); 
-		-moz-transition-duration:2s; 
     */
 	img.active { 
+    -moz-transition-property:-moz-transform; 
+    -moz-transform: rotateY(0deg) rotateX(0deg); 
+    -moz-transition-duration:2s; 
 		opacity:1;
 	} 
-	body { padding:10px;padding-top:0 ; background-color:transparent;padding-bottom:0} 
+  img.fadeout { 
+    -moz-transition-property:-moz-transform; 
+    -moz-transform: rotateY(0deg) rotateX(90deg); 
+    -moz-transition-duration:2s; 
+    opacity:1;
+  } 
+
+	body { padding:6px;padding-top:0 ; background-color:transparent;padding-bottom:0;text-align: center} 
+
     </style>
   </head>
   <body>
