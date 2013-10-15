@@ -277,7 +277,7 @@ var app = {
                                 var el = probeElement.value;
 
 				var addStyle='';
-				if(el.descricao.indexOf('mudou')>-1) { 
+				if(el.descricao.indexOf('(*)')>-1) { 
 					addStyle='background:red ! important';
 				} 
 			 	$(this).html('<div class="innerInnerCell" style="'+addStyle+'">'+el.descricao+'</div>');
