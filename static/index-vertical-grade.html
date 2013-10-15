@@ -1,4 +1,4 @@
-<html>
+<html  xmlns:svg="http://www.w3.org/2000/svg">
 
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
@@ -37,17 +37,20 @@
     </div>
 </div>
 
-<div class='gv flex' data-flex='middle' style='height:960px;box-shadow:0 8px 10px black'>
+<!-- border-radius:0 0 50px 180px; --> 
+
+<div class='gv flex' data-flex='middle' style='height:960px;overflow:hidden;box-shadow:0 8px 10px black;mask:url(#masking)'>
 	<div class='gh gh1080' >
       <div id="middle" style='width:1090px'> </div> 
     </div>
 </div>
 
+
 <div class="gv1" style="height:20px;background-color:">
 </div>
 
 <h2 style='font-size:40px' >Minicursos</h2>
-<div class='gv flex' data-flex='middle' style='height:360px;box-shadow:0 8px 10px black'>
+<div class='gv flex' data-flex='middle' style='height:360px;box-shadow:0 8px 10px black;mask:url(#masking)'>
 	<div class='gh gh1080' >
       <div id="middle2"> </div> 
     </div>
@@ -73,6 +76,23 @@
   <div id='viewport3' style='width:1080px;height:1920px'>
   </div>
 </div>
+
+<svg>
+  <defs>
+    <linearGradient id="gradient" x1="0" y1="0%" x2 ="0" y2="100%">
+      <stop stop-color="white" offset="0"/>
+      <stop stop-color="white" offset=".9"/>
+      <stop stop-color="black" offset=".95"/>
+      <stop stop-color="black" offset="1"/>
+    </linearGradient>
+
+    <mask id="masking" maskUnits="objectBoundingBox" maskContentUnits="objectBoundingBox">
+      <rect y="0" width="1" height="1" fill="url(#gradient)" />
+    </mask>
+
+  </defs>
+</svg>
+
 
 </body>
 </html>
