@@ -13,7 +13,7 @@ var app = {
 
   evento: null, 
   chunkHourSpace:150,
-  ratioForHeight:1.1,
+  ratioForHeight:.4,
   descricao : new Array(),
   gridCols: 0, 
   gridBuffer: null, 
