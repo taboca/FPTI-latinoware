@@ -37,7 +37,7 @@
 
 var app =  {
 	feedURL : URL_TWIT,
-    MAX_ITEMS: 12,
+    MAX_ITEMS: 14,
 	feed    : null, 
 	start : function() {
 
