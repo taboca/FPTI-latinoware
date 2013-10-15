@@ -7,13 +7,13 @@ $(document).ready(function() {
       iframe pages are ready. */
 
    register("/main/footer", "cabecalho", "./patrocinadores/index.html?mode=tv", iframeTemplate);
-   register("/main/middle", "meio", "./galeria/index.html", iframeTemplate);
+  // register("/main/middle", "meio", "./galeria/index.html", iframeTemplate);
    register("/main/topheader", "topo", "./header-vertical/index.html", iframeTemplate);
    register("/main/topheader", "topo", "./header-vertical/index.html", iframeTemplate);
-   register("/main/topmiddle", "mid", "", iframeTemplate);
+   register("/main/topmiddle", "destaques", "./destaques/index.html", iframeTemplate);
    register("/main/bottomsection2", "tweeter", "./twitter-new/index.html", iframeTemplate);
+   register("/main/topmiddleright", "noticias", "./noticias/index.html", iframeTemplate);
    register("/main/bottomsection", "identica", "./galeria/index.html", iframeTemplate);
-   register("/main/bottomsection-b", "fotos", "./galeri/index.html", iframeTemplate);
 
    register("/main/climatempo", "clima", "./clima/index.html", iframeTemplate);
    register("/main/hora", "hora", "./tempo/index.html", iframeTemplate);
