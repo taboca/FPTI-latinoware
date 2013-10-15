@@ -8,7 +8,7 @@ var app =  {
     element      : null,
     picWidth     : 320,
     picHeight    : 320,
-    timer        : 1500,
+    timer        : 15000,
     picQueue     : null, 
     totalElements: 3, 
     refContainers: null, 
