@@ -26,6 +26,7 @@ body {
   height:100%;
   text-overflow:ellipsis;
   word-wrap:break-word;
+  color:white;
 } 
 
 .innerNone { 
@@ -38,7 +39,7 @@ body {
 } 
 
 .innerInnerHour { 
-  margin-top:2px;
+  margin-top:6px;
 } 
 
 .innerHeader { 
@@ -49,10 +50,11 @@ body {
   padding-left:1em;
   margin-left:2px;
   margin-bottom:2px;
-  background: -moz-linear-gradient( -90deg, rgba(120,120,120,1), rgba(100,100,100,1));
+  background: -moz-linear-gradient( -90deg, rgba(20,20,20,.3), rgba(10,10,10,.5));
   font-weight:bold;
   height:50px;
-  font-size:17px;
+  font-size:15px;
+  line-height:1.4em;
   text-align:center;
   color:white;
   border-top-left-radius:20px;
