@@ -4,12 +4,12 @@
 {
  "about":"start",
  "function":"spawnJS",
- "data":{"value":"mergeTwitter.js","about":"fisl"}, "to":"next"
+ "data":{"value":"mergeTwitter.js","about":"latinoware"}, "to":"next"
 }, 
 {
  "about":"next",
  "function":"timer",
- "data":{"value":30000},
+ "data":{"value":190000},
  "to":"start"
 }
 
