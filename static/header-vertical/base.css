@@ -2,6 +2,7 @@
 @import url("http://fonts.googleapis.com/css?family=Varela");
 */
 
+@import url(http://fonts.googleapis.com/css?family=Great+Vibes);
 html, body { margin:0; padding:0; overflow:hidden } 
 
 * { 
@@ -9,6 +10,8 @@ html, body { margin:0; padding:0; overflow:hidden }
 } 
 
 body { color:white } 
+
+h2 { color:rgba(0,0,0,.3); font-family: Great Vibes; margin:.1em ; font-size:45px} 
 
 .leg {
     border-radius:10px;background-color:rgb(90,50,0);float:left;
