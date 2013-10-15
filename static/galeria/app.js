@@ -8,7 +8,7 @@ var app =  {
     element      : null,
     picWidth     : 230,
     picHeight    : 230,
-    timer        : 4000,
+    timer        : 2000,
     picQueue     : null, 
     totalElements: 8, 
     refContainers: null, 
@@ -62,7 +62,7 @@ var app =  {
 			setTimeout(function () { 
 				currentContainer.innerHTML = "<img id='posterimage"+these.imageNumber+"' src='"+t+"' class='loading'>";
 				document.getElementById("posterimage"+these.imageNumber).onload = function () { these.imageLoaded() };
-			}, 2000)
+			}, these.timer)
 			
 			return true;
 		} 
