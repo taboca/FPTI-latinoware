@@ -61,6 +61,8 @@ var app =  {
 			$(currentContainer).find("img").attr('class','fadeout');
 			setTimeout(function () { 
 				currentContainer.innerHTML = "<img id='posterimage"+these.imageNumber+"' src='"+t+"' class='loading'>";
+				these.doExpire = true; 
+				setTimeout(function () { these.tryExpire() }, these.timer*20);
 				document.getElementById("posterimage"+these.imageNumber).onload = function () { these.imageLoaded() };
 			}, these.timer)
 			
@@ -69,7 +71,18 @@ var app =  {
 
 	},
 
+    tryExpire: function () { 
+    		if(this.doExpire) { 
+                 location.reload();
+    		}
+    },
+     
+    doExpire = true, 
+
 	imageLoaded : function() { 
+
+		this.doExpire = false; 
+
 		var currImage =  document.getElementById("posterimage"+this.imageNumber);
 		var x= parseInt(currImage.width); 
 		var y= parseInt(currImage.height); 
