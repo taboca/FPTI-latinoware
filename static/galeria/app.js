@@ -77,7 +77,7 @@ var app =  {
     		}
     },
      
-    doExpire = true, 
+    doExpire : true, 
 
 	imageLoaded : function() { 
 
