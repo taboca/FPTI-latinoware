@@ -1,5 +1,29 @@
+
+
+
+function doFilter(str) { 
+    return str; 
+    $('#temp').html(str);
+    var str = $('#temp').text();
+    var fontSize = INNER_FONT_SIZE;
+    var s = str.split(' ');
+    htmlMarkup = '';
+    var gg = 255;
+    for (var i=0;i<s.length;i++) { 
+        var el = s[i];
+        if(gg>50) { 
+           gg-=30;
+        } 
+        var elMark = '<span style=";color:rgb('+gg+','+gg+','+gg+');margin-right:3px;font-size:'+fontSize+'px">'+el+'</span>';
+        fontSize-=1;
+        htmlMarkup+=elMark;
+    }
+    return htmlMarkup; 
+}
+
 /* http://tools.ietf.org/html/rfc5545 
    This will go up to the minutes */
+
 
 function durationToMinutes(strDuration) { 
   	// example P15DT5H0M20S 

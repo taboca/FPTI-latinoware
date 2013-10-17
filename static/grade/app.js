@@ -12,7 +12,7 @@ function mapCell(storeElement) {
 var app = {
 
   evento: null, 
-  chunkHourSpace:150,
+  chunkHourSpace:100,
   ratioForHeight:1.7,
   descricao : new Array(),
   gridCols: 0, 
@@ -273,26 +273,44 @@ var app = {
 		$('.'+uniqueClassName).each(function() { 
 			var probeElement = charToElement[$(this).attr('id')];
 		 	if(probeElement)  {	
-			   if(probeElement.type=='event') { 
-                                var el = probeElement.value;
 
-				var addStyle='';
-				if(el.descricao.indexOf('(*)')>-1) { 
-					addStyle='background:red ! important';
-				} 
-			 	$(this).html('<div class="innerInnerCell" style="'+addStyle+'">'+el.descricao+'</div>');
-				$(this).addClass('inner');
-				var delta = probeElement.end-probeElement.begin;
-	
-				if(probeElement.flag) { 
-					delta=delta+these.chunkHourSpace;
-				} 
-				//if(delta==0) { delta=200 } 
-				$(this).attr("style",'width:'+cssWidth+'px;height:'+these.fixScaleHeight(delta)+'px;');
-			   } 
+
+                if(probeElement.type=='event') { 
+                    var el = probeElement.value;
+                    $(this).html('<div class="innerInnerCell">'+doFilter(el.descricao)+'</div>');
+                    $(this).addClass('inner');
+                    var delta = probeElement.end-probeElement.begin;
+
+                    var addStyle='';
+                    if(probeElement.flag) { 
+                        delta=delta+these.chunkHourSpace;
+                        addStyle+='background:rgb(0,0,70);color:white';
+                        //marcio
+                    } 
+                    var dateTodayNow = new Date();
+                    var thresholdHourNow = dateTodayNow.getHours()*60+dateTodayNow.getMinutes();
+                    if(probeElement.flagToday) {
+                       if(probeElement.begin<thresholdHourNow) { 
+                           addStyle='background:rgb(0,0,170);color:white ! important;';
+                        }
+                        if(probeElement.end<thresholdHourNow) { 
+                           addStyle='background:rgb(0,70,0);color:white;';
+                        } 
+                    }
+
+                    if(el.descricao.indexOf('(*)')>-1) { 
+                        addStyle='background:-moz-linear-gradient( -90deg, rgb(150,30,30), rgb(60,30,30), rgb(60,30,30));';
+                    } 
+ 
+                    //if(delta==0) { delta=200 } 
+                    $(this).attr("style",';width:'+cssWidth+'px;height:'+these.fixScaleHeight(delta)+'px;');
+                    $(this).find('div').attr("style",addStyle);
+                } 
+
 
 			   if(probeElement.type == 'none') { 
-                                       var delta = probeElement.value;
+                
+                var delta = probeElement.value;
 				if(probeElement.flag) { 
 					delta=these.chunkHourSpace;
 				} 
