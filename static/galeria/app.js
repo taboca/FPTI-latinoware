@@ -63,7 +63,9 @@ var app =  {
 				currentContainer.innerHTML = "<img id='posterimage"+these.imageNumber+"' src='"+t+"' class='loading'>";
 				these.doExpire = true; 
 				//setTimeout(function () { these.tryExpire() }, these.timer*20);
-				document.getElementById("posterimage"+these.imageNumber).onload = function () { these.imageLoaded() };
+				setTimeout(function () { these.imageLoaded() }, these.timer)
+				//document.getElementById("posterimage"+these.imageNumber).onload = function () { these.imageLoaded() };
+
 			}, these.timer)
 			
 			return true;
