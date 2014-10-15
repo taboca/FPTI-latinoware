@@ -127,9 +127,9 @@ var app =  {
 			var src = objs[k].download;
 			var text= '';
 			var from ='';
-			if(objs[k].caption) { 
-			 // text = (objs[k].caption.text);
-			  //from = (objs[k].caption.from.username);
+			if(objs[k]) { 
+			  text = (objs[k].text);
+			  from = (objs[k].from);
 			} 
             this.picQueue.push({"url":src,"text":text, "from":from});
 
