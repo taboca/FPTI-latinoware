@@ -5,7 +5,7 @@ doFilter = function (that) {
  var link = $(that).find('description').text();
  $('#temp').html(link);
  var plainDesc = $('#temp').text();	
- var desc = plainDesc.split('slide')[0];
+ var desc = plainDesc.split('LatinowareSlide')[0];
  var lines = desc.split('\n');
  desc = lines[0].split('Body:')[1]; 
 
