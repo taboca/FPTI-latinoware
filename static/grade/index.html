@@ -24,21 +24,12 @@
   	    transport.init();
 	    transport.start(function (evento) { 
             app.init(evento);
-        /*
-		var qDates = new Array();
-		var today = new Date();
-		var tomorrow = new Date();
-		tomorrow.setTime(today.getTime()+86400000);
-		qDates.push(''+ today.getDate());
-		qDates.push(''+ tomorrow.getDate());
-		//app.start(qDates);
-        */
-		   app.start(['15','16','17']);
+		    app.start(['15','16','17']);
 	    }); 
 
      }); 
     </script>
-    <style> body { background:lack } </style>
+    <style> body { } </style>
   </head>
   <body >
     <div id='debug'>

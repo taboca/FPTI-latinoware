@@ -58,7 +58,7 @@ var app = {
 				var preHeaderElement= document.createElement("div");
 			  	preHeaderElement.setAttribute("class","dayStamp");	
 				preHeaderElement.innerHTML="<div style='clear:both'></div><h2>"+dday+" de "+( dateUtil.getPtBrMonth());
-				document.body.appendChild(preHeaderElement);
+				document.getElementById('container').appendChild(preHeaderElement);
 			}  
 			// generateDivs are to use gridBuffer, cols 
 			// and the inner util function gridtype to make
