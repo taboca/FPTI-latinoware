@@ -100,6 +100,9 @@ function parseAndSave() {
 
               for(var i=0;i<result.length;i++) { 
                   var link = result[i].images.standard_resolution.url;
+                  var text = result[i].caption.text;
+                  var from = result[i].caption.from.username;
+
                   var md5Link = MD5(link);
 
                   var cached = false; 
@@ -140,7 +143,8 @@ function parseAndSave() {
                       console.log('child process exited with code ' + code);
                     });
 
-                    matchingObject = {"src":link, "channel": sourceChannel , "download" : '/channel/cache/' +sourceChannel + '/' + md5Link + '.png' , "md5URL" : md5Link , "test":false, "targetFile":targetFile};
+
+                    matchingObject = {"from": from, "text": text , "src":link, "channel": sourceChannel , "download" : '/channel/cache/' +sourceChannel + '/' + md5Link + '.png' , "md5URL" : md5Link , "test":false, "targetFile":targetFile};
                     
                     that.listPages.push(matchingObject);
                     
