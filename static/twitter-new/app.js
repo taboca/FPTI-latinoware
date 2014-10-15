@@ -148,7 +148,8 @@ var app =  {
               out.body='';
               out.src=objs[k].user.profile_image_url;
               out.screen = objs[k].user.screen_name;
-            self.tweetQueue.push( '<div class=""><img style="float:left;margin-right:10px;" src="'+out.src+'" /> <div class="userStamp" >'+out.date+' / <i>(@'+out.screen+') </i></div><h3> '+out.title+'</h3></div>' );
+            self.tweetQueue.push( '<div class=""><img style="float:left;margin-right:10px;" src="'+out.src+'" /> <div class="userStamp" > <i>(@'+out.screen+') </i></div><h3> '+out.title+'</h3></div>' );
+            //self.tweetQueue.push( '<div class=""><img style="float:left;margin-right:10px;" src="'+out.src+'" /> <div class="userStamp" >'+out.date+' / <i>(@'+out.screen+') </i></div><h3> '+out.title+'</h3></div>' );
  //         cc++;
         }
 
