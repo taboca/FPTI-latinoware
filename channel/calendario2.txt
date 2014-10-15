@@ -9,9 +9,9 @@ X-WR-CALDESC:
 BEGIN:VEVENT
 DTSTART:20141015T190000Z
 DURATION:PT240M
-DTSTAMP:20141014T145837Z
+DTSTAMP:20141014T151448Z
 UID:98@1@102@1114
-CREATED:20141014T145837Z
+CREATED:20141014T151448Z
 DESCRIPTION:breve
 LAST-MODIFIED:20140826T124950Z
 LOCATION:LAB 1
@@ -25,9 +25,9 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20141015T190000Z
 DURATION:PT240M
-DTSTAMP:20141014T145837Z
+DTSTAMP:20141014T151448Z
 UID:98@1@103@1135
-CREATED:20141014T145837Z
+CREATED:20141014T151448Z
 DESCRIPTION:Neste workshop você irá conhecer o Drupal e aprender como const
  ruir um site sem precisar programar sequer uma linha de código.\n\nDrupal é
   um sistema de gerenciamento de conteúdo\, open source\, muito flexível e f
@@ -54,9 +54,9 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20141015T190000Z
 DURATION:PT240M
-DTSTAMP:20141014T145837Z
+DTSTAMP:20141014T151448Z
 UID:98@1@104@1149
-CREATED:20141014T145837Z
+CREATED:20141014T151448Z
 DESCRIPTION:Aprenda a fazer algo incrível na web com o projeto Webmaker\, o
  s participantes serão convidados a criar\, tanto online quanto offline\, e 
  também a conhecer as ferramentas do Webmaker. O Webmaker possui ferramentas
@@ -76,9 +76,9 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20141015T190000Z
 DURATION:PT240M
-DTSTAMP:20141014T145837Z
+DTSTAMP:20141014T151448Z
 UID:98@1@105@1179
-CREATED:20141014T145837Z
+CREATED:20141014T151448Z
 DESCRIPTION:O objetivo deste  workshop é demonstrar como o Mypaint e Kria p
  odem servir de base para criações focadas em ilustrações\, concept designer
  \,  sketch\, etc. Apresentando seu potencial\, suas funcionalidades e carac
@@ -96,9 +96,9 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20141015T190000Z
 DURATION:PT240M
-DTSTAMP:20141014T145837Z
+DTSTAMP:20141014T151448Z
 UID:98@1@106@1286
-CREATED:20141014T145837Z
+CREATED:20141014T151448Z
 DESCRIPTION:breve
 LAST-MODIFIED:20141007T135738Z
 LOCATION:Espaço Ñandeva
@@ -112,9 +112,9 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20141016T130000Z
 DURATION:PT240M
-DTSTAMP:20141014T145837Z
+DTSTAMP:20141014T151448Z
 UID:99@1@102@1256
-CREATED:20141014T145837Z
+CREATED:20141014T151448Z
 DESCRIPTION:Especialista no assunto\, Neves é conhecido pelo didatismo e bo
  m humor. É também responsável pela série de tutoriais sobre programação em 
  Shell Script e Expressões Regulares\, publicados na revista Linux Magazine\
@@ -132,9 +132,9 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20141016T130000Z
 DURATION:PT240M
-DTSTAMP:20141014T145837Z
+DTSTAMP:20141014T151448Z
 UID:99@1@103@1162
-CREATED:20141014T145837Z
+CREATED:20141014T151448Z
 DESCRIPTION:Conteu?do Programa?tico\nKudo Post Mortem Forense com Ferrament
  a Foss – Palestrante Sandro Melo\nTo?picos principais:\nConceituando o proc
  esso de uma Post Mortem Forense\; Conceituando as ana?lises em camadas\;\nC
@@ -183,9 +183,9 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20141016T130000Z
 DURATION:PT240M
-DTSTAMP:20141014T145837Z
+DTSTAMP:20141014T151448Z
 UID:99@1@104@1112
-CREATED:20141014T145837Z
+CREATED:20141014T151448Z
 DESCRIPTION:breve
 LAST-MODIFIED:20140826T125027Z
 LOCATION:LAB 3
@@ -199,9 +199,9 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20141016T130000Z
 DURATION:PT240M
-DTSTAMP:20141014T145837Z
+DTSTAMP:20141014T151448Z
 UID:99@1@105@1150
-CREATED:20141014T145837Z
+CREATED:20141014T151448Z
 DESCRIPTION:Aprenda como fazer um aplicativo para o FirefoxOS manualmente e
   como portar o seu site/aplicativo já existente para a plataforma. Nesta of
  icina também será apresentado o AppMaker\, uma ferramenta criada pela Mozil
@@ -218,9 +218,9 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20141016T130000Z
 DURATION:PT240M
-DTSTAMP:20141014T145837Z
+DTSTAMP:20141014T151448Z
 UID:99@1@106@1286
-CREATED:20141014T145837Z
+CREATED:20141014T151448Z
 DESCRIPTION:breve
 LAST-MODIFIED:20141007T135809Z
 LOCATION:Espaço Ñandeva
@@ -234,9 +234,9 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20141016T130000Z
 DURATION:PT240M
-DTSTAMP:20141014T145837Z
+DTSTAMP:20141014T151448Z
 UID:99@1@107@1293
-CREATED:20141014T145837Z
+CREATED:20141014T151448Z
 DESCRIPTION:Workshop Design Thinking: O conteúdo do workshop aborda a dinâm
  ica do design para estimular a inovação\, utilizando muita atividade prátic
  a e a criatividade para geração de soluções a partir de problemas identific
@@ -257,9 +257,9 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20141016T170000Z
 DURATION:PT240M
-DTSTAMP:20141014T145837Z
+DTSTAMP:20141014T151448Z
 UID:99@2@102@1183
-CREATED:20141014T145837Z
+CREATED:20141014T151448Z
 DESCRIPTION:O R é um ambiente e linguagem de programação sob a licença GPL 
  (General Public License) desenvolvido na universidade de Auckland\, Nova Ze
  lândia\, por Robert Gentleman e Ross Ihaka. Esse software tem ganhado espaç
@@ -285,9 +285,9 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20141016T170000Z
 DURATION:PT240M
-DTSTAMP:20141014T145837Z
+DTSTAMP:20141014T151448Z
 UID:99@2@103@1162
-CREATED:20141014T145837Z
+CREATED:20141014T151448Z
 DESCRIPTION:Conteu?do Programa?tico\nKudo Post Mortem Forense com Ferrament
  a Foss – Palestrante Sandro Melo\nTo?picos principais:\nConceituando o proc
  esso de uma Post Mortem Forense\; Conceituando as ana?lises em camadas\;\nC
@@ -336,9 +336,9 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20141016T170000Z
 DURATION:PT240M
-DTSTAMP:20141014T145837Z
+DTSTAMP:20141014T151448Z
 UID:99@2@104@1113
-CREATED:20141014T145837Z
+CREATED:20141014T151448Z
 DESCRIPTION:breve
 LAST-MODIFIED:20140826T125013Z
 LOCATION:LAB 3
@@ -352,9 +352,9 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20141016T170000Z
 DURATION:PT240M
-DTSTAMP:20141014T145837Z
+DTSTAMP:20141014T151448Z
 UID:99@2@105@1151
-CREATED:20141014T145837Z
+CREATED:20141014T151448Z
 DESCRIPTION:Continuação do trabalho de tradução do Firefox em idioma Guaran
  i\, que já está sendo levado a cabo pela Facultad Politecnica da Universida
  d Nacional de Asuncion\, e com apoio do Ateneo de Lenguas e Secretarîa de P
@@ -371,9 +371,9 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20141016T170000Z
 DURATION:PT240M
-DTSTAMP:20141014T145837Z
+DTSTAMP:20141014T151448Z
 UID:99@2@106@1286
-CREATED:20141014T145837Z
+CREATED:20141014T151448Z
 DESCRIPTION:breve
 LAST-MODIFIED:20141007T135812Z
 LOCATION:Espaço Ñandeva
@@ -387,9 +387,9 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20141016T170000Z
 DURATION:PT240M
-DTSTAMP:20141014T145837Z
+DTSTAMP:20141014T151448Z
 UID:99@2@107@1293
-CREATED:20141014T145837Z
+CREATED:20141014T151448Z
 DESCRIPTION:Workshop Design Thinking: O conteúdo do workshop aborda a dinâm
  ica do design para estimular a inovação\, utilizando muita atividade prátic
  a e a criatividade para geração de soluções a partir de problemas identific
@@ -410,9 +410,9 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20141017T130000Z
 DURATION:PT240M
-DTSTAMP:20141014T145837Z
+DTSTAMP:20141014T151448Z
 UID:100@1@102@1182
-CREATED:20141014T145837Z
+CREATED:20141014T151448Z
 DESCRIPTION:O Geogebra é um software livre que pode ser utilizados por dive
  rsas áreas da ciência\, tendo como características interface dinâmica e int
  uitiva. Além disso\, tem grande potencial de aplicação por meio de modelage
@@ -435,9 +435,9 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20141017T130000Z
 DURATION:PT240M
-DTSTAMP:20141014T145837Z
+DTSTAMP:20141014T151448Z
 UID:100@1@103@1152
-CREATED:20141014T145837Z
+CREATED:20141014T151448Z
 DESCRIPTION:Introduction to Mozilla QA\, How to get involved in QA\, Differ
  ent teams in QA\, Manual and automation testing in detail with examples Han
  ds on with One and Done tasks
@@ -453,9 +453,9 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20141017T130000Z
 DURATION:PT240M
-DTSTAMP:20141014T145837Z
+DTSTAMP:20141014T151448Z
 UID:100@1@104@1126
-CREATED:20141014T145837Z
+CREATED:20141014T151448Z
 DESCRIPTION:O minicurso vai ser ministrados por dois instrutores dos cursos
   oficiais da  Puppetlabs\, eles vão demonstrar a instalação e a configuraçã
  o de um servidor Puppet (1 hora)\, vão falar sobre a construção de módulos 
@@ -478,9 +478,9 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20141017T130000Z
 DURATION:PT240M
-DTSTAMP:20141014T145837Z
+DTSTAMP:20141014T151448Z
 UID:100@1@105@1038
-CREATED:20141014T145837Z
+CREATED:20141014T151448Z
 DESCRIPTION:Começar a desenvolver com o framework Laravel é mais fácil do q
  ue você pensa\, ainda que a extensa documentação sobre o mesmo possa deixar
   confusos os usuários que estão buscando informação sobre ele. Nesse minicu
@@ -505,9 +505,9 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20141017T130000Z
 DURATION:PT240M
-DTSTAMP:20141014T145837Z
+DTSTAMP:20141014T151448Z
 UID:100@1@106@1286
-CREATED:20141014T145837Z
+CREATED:20141014T151448Z
 DESCRIPTION:breve
 LAST-MODIFIED:20141007T135819Z
 LOCATION:Espaço Ñandeva
@@ -521,9 +521,9 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20141017T130000Z
 DURATION:PT240M
-DTSTAMP:20141014T145837Z
+DTSTAMP:20141014T151448Z
 UID:100@1@107@1294
-CREATED:20141014T145837Z
+CREATED:20141014T151448Z
 DESCRIPTION:Workshop Business Model Canvas: É uma linguagem comum que permi
  te descrever\, analisar e orientar organizações em como podem criar novos o
  u alterar modelos de negócios já existentes\, por meio de uma metodologia á
@@ -544,9 +544,9 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20141017T170000Z
 DURATION:PT240M
-DTSTAMP:20141014T145837Z
+DTSTAMP:20141014T151448Z
 UID:100@2@102@1254
-CREATED:20141014T145837Z
+CREATED:20141014T151448Z
 DESCRIPTION:Neste minicurso\, será apresentado realizado o processo de inst
  alação do servidor de mapas GEOSERVER (criação de Workspaces\, Stores\, Lay
  ers\, LayerGroups e a customização de Styles) e a criação de uma tela de ma
@@ -566,9 +566,9 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20141017T170000Z
 DURATION:PT240M
-DTSTAMP:20141014T145837Z
+DTSTAMP:20141014T151448Z
 UID:100@2@103@1214
-CREATED:20141014T145837Z
+CREATED:20141014T151448Z
 DESCRIPTION:Como desenvolver solução de Internet of Things utilizando NodeJ
  S. O lançamento do NodeJS não só possibilitou o desenvolvimento BackEnd uti
  lizando JavaScript mas também o desenvolvimento de software e aplicações em
@@ -586,9 +586,9 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20141017T170000Z
 DURATION:PT240M
-DTSTAMP:20141014T145837Z
+DTSTAMP:20141014T151448Z
 UID:100@2@104@1169
-CREATED:20141014T145837Z
+CREATED:20141014T151448Z
 DESCRIPTION:O intuito desta apresentação seria de mostrar aos participantes
   como usar um Sistema de Gerenciador de Conteúdo Open Source (Joomla) para 
  criação e gerenciamento de sites de ONGs e até mesmo de seu blog pessoal ou
@@ -605,9 +605,9 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20141017T170000Z
 DURATION:PT240M
-DTSTAMP:20141014T145837Z
+DTSTAMP:20141014T151448Z
 UID:100@2@105@1255
-CREATED:20141014T145837Z
+CREATED:20141014T151448Z
 DESCRIPTION:Uma breve introdução sobre o framework AngularJS e seus compone
  ntes\, desenvolvendo uma aplicação simples que contemple itens reais do dia
   dia\, proporcionando uma experiencia com a ferramenta de tal forma que qua
@@ -625,9 +625,9 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20141017T170000Z
 DURATION:PT240M
-DTSTAMP:20141014T145837Z
+DTSTAMP:20141014T151448Z
 UID:100@2@106@1286
-CREATED:20141014T145837Z
+CREATED:20141014T151448Z
 DESCRIPTION:breve
 LAST-MODIFIED:20141007T135821Z
 LOCATION:Espaço Ñandeva
@@ -641,9 +641,9 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20141017T170000Z
 DURATION:PT240M
-DTSTAMP:20141014T145837Z
+DTSTAMP:20141014T151448Z
 UID:100@2@107@1294
-CREATED:20141014T145837Z
+CREATED:20141014T151448Z
 DESCRIPTION:Workshop Business Model Canvas: É uma linguagem comum que permi
  te descrever\, analisar e orientar organizações em como podem criar novos o
  u alterar modelos de negócios já existentes\, por meio de uma metodologia á

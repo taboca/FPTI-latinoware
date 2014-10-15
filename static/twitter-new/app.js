@@ -114,9 +114,7 @@ var app =  {
 				setTimeout(function() { $($("div.item")[0]).remove() } ,2000);
 				setTimeout(function() { $($("div.itemshadow")[0]).remove() } ,2000);
 
-			        $("div.item")[0].setAttribute("style","-moz-transition-property: margin-top;-moz-transition-duration:1s;margin-top:-55px ");
-
-
+			    $("div.item")[0].setAttribute("style","-moz-transition-property: margin-top;-moz-transition-duration:1s;margin-top:-55px ");
 
 				this.total--;
 			} 
@@ -145,11 +143,12 @@ var app =  {
 //            var out = doFilter(this); 
               out = {}; 
               out.title = objs[k].text;
+              out.date = objs[k].created_at;
               out.subtitle='';
               out.body='';
               out.src=objs[k].user.profile_image_url;
               out.screen = objs[k].user.screen_name;
-            self.tweetQueue.push( '<div class=""><img style="float:left;margin-right:10px;" src="'+out.src+'" /> <h3> <i>(@'+out.screen+') </i>'+out.title+'</h3><div class="desc">'+out.subtitle+'</div><div class="descFull" style="display:none">'+out.body+'</div></div>' );
+            self.tweetQueue.push( '<div class=""><img style="float:left;margin-right:10px;" src="'+out.src+'" /> <div class="userStamp" >'+out.date+' / <i>(@'+out.screen+') </i></div><h3> '+out.title+'</h3></div>' );
  //         cc++;
         }
 
