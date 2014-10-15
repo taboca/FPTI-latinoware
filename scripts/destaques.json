@@ -5,7 +5,7 @@
  "about":"start",
  "function":"saveRSS",
  "expiretimer":10000, 
- "data":{"value":"http://app.telasocial.com.br/osp02","about":"destaques"}, "to":"next"
+ "data":{"value":"http://sd-latinoware.pti.org.br/?q=rss.xml","about":"destaques"}, "to":"next"
 }, 
 {
  "about":"next",
