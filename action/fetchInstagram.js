@@ -60,6 +60,7 @@ function parseAndSave() {
       this.channel = sourceChannel; 
       this.baseStore = new Array()
       this.jsonStore = {item: new Array()}
+      this.jsonStoreRecent = {item: new Array()}
     	this.sendToApp = sendingDataFunction;
     	this.hasEnded  = hasEndedFunction;
       this.appPath = appPath; 
@@ -74,9 +75,10 @@ function parseAndSave() {
 
           var result = JSON.parse(data);
 
-          var filePathLocal = pathFS.join( __dirname, '..', that.appPath, 'channel', sourceChannel+'-cache.json');
+          var filePathLocal = pathFS.join( __dirname, '..', that.appPath, 'channel', sourceChannel+'-db-cache.json');
 
           fs.readFile(filePathLocal, function(err, data) {
+
                if (err) { 
                    if(err.errno==34) {
   //                     out.senderr({'result':'error', 'payload': err});
@@ -93,6 +95,8 @@ function parseAndSave() {
                }
 
                var syncCachedFile = false;
+
+              /* Most recent images */
 
               for(var i=0;i<result.length;i++) { 
                   var link = result[i].images.standard_resolution.url;
@@ -141,20 +145,23 @@ function parseAndSave() {
                     that.listPages.push(matchingObject);
                     
                     that.jsonStore.item.push(matchingObject); 
-                  
+                    that.jsonStoreRecent.item.push(matchingObject); 
+ 
                   } else { 
                   
                     that.sendToApp("!!! Already in cache!! " + link); 
-                  
+                    that.jsonStoreRecent.item.push(that.baseStore[md5Link]); 
+
                   }
 
               } 
 
               if(syncCachedFile) {        
                       that.channelData = JSON.stringify(that.jsonStore);
+
                       console.log('==== out to write === :' + that.channelData);
                       //that.renderFetch(); 
-                      var fileOutLocal = pathFS.join( __dirname, '..', that.appPath, 'channel', sourceChannel+'-cache.json');
+                      var fileOutLocal = pathFS.join( __dirname, '..', that.appPath, 'channel', sourceChannel+'-db-cache.json');
                       fs.writeFile(fileOutLocal, that.channelData, 'utf8', function(err){
                            if (err) { 
                              out.senderr({'result':'error', 'payload': err});
@@ -164,6 +171,19 @@ function parseAndSave() {
                            //out.send({'result':'ok'});
                            //clearTimeout(timer);
                       });
+
+                      var fileOutLocal = pathFS.join( __dirname, '..', that.appPath, 'channel', sourceChannel+'-cache.json');
+
+                      fs.writeFile(fileOutLocal, JSON.stringify(that.jsonStoreRecent), 'utf8', function(err){
+                           if (err) { 
+                             out.senderr({'result':'error', 'payload': err});
+                             throw err; 
+                           }   
+                           // warning: we need to clear the timer...
+                           //out.send({'result':'ok'});
+                           //clearTimeout(timer);
+                      });
+
                       that.renderFetch()
               }
 
