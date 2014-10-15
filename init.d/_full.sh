@@ -5,3 +5,4 @@ rm -rf /root/.forever/*.log
 git reset --hard HEAD
 git pull --force
 python _restart.py;
+ps -efa | grep tela
