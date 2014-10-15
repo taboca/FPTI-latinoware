@@ -78,7 +78,7 @@ var app =  {
 			k.className="item";
 			var kk = document.createElement('div');
 			kk.className="itemshadow";
-			k.innerHTML = this.tweetQueue.pop();
+			k.innerHTML =  this.tweetQueue.pop();
 			//this.element.insertBefore(k, this.element.firstChild);
 			this.element.appendChild(k);
 			this.element.appendChild(kk);
