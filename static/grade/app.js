@@ -301,7 +301,7 @@ var app = {
                         } 
                     }
 
-                    if(el.descricao.indexOf('(*)')>-1) { 
+                    if(el.descricao.indexOf('*')>-1) { 
                         addStyle='background:-moz-linear-gradient( -90deg, rgb(150,30,30), rgb(60,30,30), rgb(60,30,30));';
                     } 
  
