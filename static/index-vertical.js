@@ -13,8 +13,8 @@ $(document).ready(function() {
    register("/main/topmiddle", "destaques", "./destaques/index.html", iframeTemplate);
    register("/main/bottomsection2", "tweeter", "./twitter-new/index.html", iframeTemplate);
    register("/main/topmiddleright", "noticias", "./noticias/index.html", iframeTemplate);
-   register("/main/bottomsection", "identica", "./galeria-cache/index.html", iframeTemplate);
-   //register("/main/bottomsection", "identica", "./galeria/index.html", iframeTemplate);
+   //register("/main/bottomsection", "identica", "./galeria-cache/index.html", iframeTemplate);
+   register("/main/bottomsection", "identica", "./galeria/index.html", iframeTemplate);
 
    //register("/main/climatempo", "clima", "./clima/index.html", iframeTemplate);
    register("/main/hora", "hora", "./tempo/index.html", iframeTemplate);
