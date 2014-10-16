@@ -5,7 +5,6 @@ var sys = require("sys"),
     http = require("http"),
     httpAgent = require('http-agent'),
     qs = require("querystring"),
-    Twit = require('twit'),
     config = require('../config.js'),
     Instagram = require('instagram-node-lib'),
     out = require('../3rdparty/stdout-2-json/stdout-2-json');
