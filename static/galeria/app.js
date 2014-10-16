@@ -55,8 +55,6 @@ var app =  {
 			var t = envelope.url;
 			var eText = envelope.text;
 			var eFrom = envelope.from;
-            var eText='';
-            var eFrom='';
 
 			this.refContainerCycle++;
 			if(this.refContainerCycle == this.totalElements) { 
