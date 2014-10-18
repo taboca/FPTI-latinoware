@@ -51,7 +51,11 @@ var app =  {
 			var self = this;
 			this.feed.load( function (e) { self.__feedUpdated(e) } );
 		} else { 
-			var t = this.picQueue.pop();
+			var envelope = this.picQueue.pop();
+			var t = envelope.url;
+			var eText = envelope.text;
+			var eFrom = envelope.from;
+
 			this.refContainerCycle++;
 			if(this.refContainerCycle == this.totalElements) { 
 				this.refContainerCycle=0;
@@ -60,7 +64,7 @@ var app =  {
 			these = this;
 			$(currentContainer).find("img").attr('class','fadeout');
 			setTimeout(function () { 
-				currentContainer.innerHTML = "<img id='posterimage"+these.imageNumber+"' src='"+t+"' class='loading'>";
+				currentContainer.innerHTML = "<div class='base'> <div class='innerImage'><img id='posterimage"+these.imageNumber+"' src='"+t+"' class='loading'></div><div class='innerBase'><div class='innerSpace'></div><div class='innerCaption'>"+eText+"</div></div></div>";
 				these.doExpire = true; 
 				//setTimeout(function () { these.tryExpire() }, these.timer*20);
 				setTimeout(function () { these.imageLoaded() }, these.timer)
@@ -121,7 +125,14 @@ var app =  {
 		var objs = $.parseJSON(text);
 		for( var k in objs) {
 			var src = (objs[k].images.standard_resolution);
-            this.picQueue.push(src.url);
+			var text= '';
+			var from ='';
+			if(objs[k].caption) { 
+			  text = (objs[k].caption.text);
+			  from = (objs[k].caption.from.username);
+			} 
+            this.picQueue.push({"url":src.url,"text":text, "from":from});
+
 		} 
 		this.kickFadeIn();
 	}
