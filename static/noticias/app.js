@@ -14,7 +14,7 @@
  * The Original Code is TelaSocial
  *
  * The Initial Developer of the Original Code is Taboca TelaSocial.
- * Portions created by the Initial Developer are Copyright (C) 2010 
+ * Portions created by the Initial Developer are Copyright (C) 2010
  * the Initial Developer. All Rights Reserved.
  *
  * Contributor(s):
@@ -37,12 +37,13 @@
 
 var app =  {
 	feedURL : URL_NOTICIAS,
-    startCicle:2000,
-    MAX_ITEMS: 2,
-	feed    : null, 
+	startCicle:200,
+	MAX_ITEMS: 2,
+	total:0,
+	feed    : null,
 	start : function() {
 
-                this.elementStore = document.createElement('div');
+    this.elementStore = document.createElement('div');
 		this.elementStore.setAttribute("id","container");
 		document.body.appendChild(this.elementStore);
 		this.element = document.createElement('div');
@@ -60,20 +61,23 @@ var app =  {
 		setTimeout( function(){self.updateFeed()},1500);
 	},
 
-	init : function () { 
+	init : function () {
 		this.feed = new t8l.feeds.Feed(this.feedURL);
 		this.feed.setResultFormat(t8l.feeds.Feed.XML_FORMAT);
 		this.feed.setNumEntries(10);
 	} ,
 
-        total:0,
+	updateFeed : function() {
+		var self =this;
+		this.feed.load( function (e) { self.__feedUpdated(e) } );
+	},
 
 	render : function() {
 		var counter = 0;
 		var self = this;
-		if(this.tweetQueue.length<1) { 
+		if(this.tweetQueue.length<1) {
 			setTimeout( function(){self.updateFeed()},1000);
-		} else { 
+		} else {
 			var k = document.createElement('div');
 			k.className="item";
 			var kk = document.createElement('div');
@@ -85,7 +89,7 @@ var app =  {
 			k.className="item";
 
 			this.total++;
-			if(this.total>this.MAX_ITEMS) { 
+			if(this.total>this.MAX_ITEMS) {
 				var localItem = $($('div.item')[0]);
 				var title = localItem.find('h3').text();
 				var desc = localItem.find('.desc').text();
@@ -97,38 +101,29 @@ var app =  {
 				//$($("div.item")[0]).animate({height:'hide'}, 1000, function() {  $($("div.item")[0]).remove() } );
 				setTimeout(function() { $($("div.item")[0]).remove() } ,2000);
 				setTimeout(function() { $($("div.itemshadow")[0]).remove() } ,2000);
-
-			        $("div.item")[0].setAttribute("style","-moz-transition-property: margin-top;-moz-transition-duration:1s;margin-top:-110px ");
-
-
-
+        $("div.item")[0].setAttribute("style","-moz-transition-property: margin-top;-moz-transition-duration:1s;margin-top:-110px ");
 				this.total--;
-			} 
+			}
 
-            if(this.startCicle<26000) { 
+            if(this.startCicle<26000) {
                  this.startCicle+=2000;
-            } 
+            }
 			setTimeout( function () { self.render() }, this.startCicle);
-		} 
-	},
-
-	updateFeed : function() {
-		var self =this;
-		this.feed.load( function (e) { self.__feedUpdated(e) } );
+		}
 	},
 
 	__feedUpdated : function(result) {
 
                 this.tweetRepeated = {};
-		var self  = this; 
+		var self  = this;
 		var cc=0;
 
   		$(result.xmlDocument).find('item').each(function(){
 
-          if(cc<5) { 
-            var out = doFilter(this); 
+          if(cc<5) {
+            var out = doFilter(this);
             self.tweetQueue.push( '<div class=""><h3>'+out.title+'</h3><div class="desc">'+out.subtitle+'</div><div class="externalLink" style="display:none">'+out.externallink+'</div><div class="descFull" style="display:none">'+out.body+'</div><img src="'+out.src+'" style="display:none"/></div>' );
-          } 
+          }
           cc++;
         });
 
@@ -136,4 +131,3 @@ var app =  {
 		self.render();
 	}
 }
-

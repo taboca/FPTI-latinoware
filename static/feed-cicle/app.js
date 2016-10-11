@@ -14,7 +14,7 @@
  * The Original Code is TelaSocial
  *
  * The Initial Developer of the Original Code is Taboca TelaSocial.
- * Portions created by the Initial Developer are Copyright (C) 2010 
+ * Portions created by the Initial Developer are Copyright (C) 2010
  * the Initial Developer. All Rights Reserved.
  *
  * Contributor(s):
@@ -39,7 +39,7 @@ var app =  {
 	feedURL   : URL_FEED,
     MAX_ITEMS : 3,
     queue : new Array(),
-	feed  : null, 
+	feed  : null,
 	start : function() {
 
         this.elementStore = document.createElement('div');
@@ -59,7 +59,7 @@ var app =  {
 		setTimeout( function(){self.updateFeed()},1500);
 	},
 
-	init : function () { 
+	init : function () {
 		this.feed = new t8l.feeds.Feed(this.feedURL);
 		this.feed.setResultFormat(t8l.feeds.Feed.XML_FORMAT);
         //this.feed.setResultFormat('text'); // differs from google now
@@ -70,22 +70,21 @@ var app =  {
     total:0,
     flipflop:true,
 
-    flip: function () { 
-
-             if(this.flipflop) { 
-                 this.flipflop=false; return 'color:black';
-             } 
-             else { 
-                 this.flipflop=true; return 'color:#444';
-             } 
+    flip: function () {
+				if(this.flipflop) {
+				   this.flipflop=false; return 'color:black';
+				}
+				else {
+				   this.flipflop=true; return 'color:#444';
+				}
     },
 
 	render : function() {
 		var counter = 0;
 		var self = this;
-		if(this.queue.length<1) { 
+		if(this.queue.length<1) {
 			setTimeout( function(){self.updateFeed()},19999);
-		} else { 
+		} else {
 			var k = document.createElement('div');
 			k.className="item";
 			var kk = document.createElement('div');
@@ -97,12 +96,12 @@ var app =  {
 			k.className="item";
 
 			var localItem = $($('div.item'));
-            var llLength = localItem.length;
+      var llLength = localItem.length;
 			var localItem = $($('div.item')[llLength-1]);
-            localItem.find('h3').attr('style',''+self.flip()+' ! important');
+      localItem.find('h3').attr('style',''+self.flip()+' ! important');
 
 			this.total++;
-			if(this.total>this.MAX_ITEMS) { 
+			if(this.total>this.MAX_ITEMS) {
 				var localItem = $($('div.item')[0]);
 				var title = localItem.find('h3').text();
 				var desc = localItem.find('.desc').text();
@@ -113,15 +112,11 @@ var app =  {
 				//$($("div.item")[0]).animate({height:'hide'}, 1000, function() {  $($("div.item")[0]).remove() } );
 				setTimeout(function() { $($("div.item")[0]).remove() } ,2000);
 				setTimeout(function() { $($("div.itemshadow")[0]).remove() } ,2000);
-
-			        $("div.item")[0].setAttribute("style","-moz-transition-property: margin-top;-moz-transition-duration:1s;margin-top:-55px ");
-
-
-
+        $("div.item")[0].setAttribute("style","-moz-transition-property: margin-top;-moz-transition-duration:1s;margin-top:-55px ");
 				this.total--;
-			} 
+			}
 			setTimeout( function () { self.render() }, 12000);
-		} 
+		}
 	},
 
 	updateFeed : function() {
@@ -130,17 +125,16 @@ var app =  {
 	},
 
 	__feedUpdated : function(result) {
-		var self  = this; 
+		var self  = this;
         MAX_FEED=0;
   		$(result.xmlDocument).find('item').each(function(){
-          if(MAX_FEED<5) { 
-            var out = doFilter(this); 
+          if(MAX_FEED<5) {
+            var out = doFilter(this);
             //self.queue.push(out);
             self.queue.push( '<div class=""><img style="float:left;margin-right:10px;" src="'+out.src+'" /><h3>'+out.title+'</h3><div class="desc">'+out.description+'</div><div class="descFull" style="display:none">'+out.body+'</div></div>' );
-          } 
+          }
           MAX_FEED++;
         });
 		self.render();
 	}
 }
-
