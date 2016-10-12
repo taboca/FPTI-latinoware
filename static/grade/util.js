@@ -1,41 +1,52 @@
 
 
-
-function doFilter(str) { 
-    return str; 
+function doFilter(str, authorContainer) {
+    //return str;
     $('#temp').html(str);
     var str = $('#temp').text();
     var fontSize = INNER_FONT_SIZE;
+
     var s = str.split(' ');
-    htmlMarkup = '';
-    var gg = 255;
-    for (var i=0;i<s.length;i++) { 
+    var authorProposal = '';
+    if(authorContainer) {
+        if(typeof gridMaker.candidates[authorContainer] != 'undefined') {
+            authorProposal = gridMaker.candidates[authorContainer][0];
+        }
+    }
+    cor1 = parseInt(Math.random()*155);
+    cor2 = parseInt(Math.random()*155);
+    cor3 = parseInt(Math.random()*155);
+    htmlMarkup = '<span class="zone" style="display:inline-block;background-color:rgb('+cor1+','+cor2+','+cor3+');"></span><span class="author" >'+authorProposal+'</span><br>';
+    var gg = 200;
+    for (var i=0;i<s.length;i++) {
         var el = s[i];
-        if(gg>50) { 
-           gg-=30;
-        } 
+        if(gg>50) {
+           gg-=25;
+        }
         var elMark = '<span style=";color:rgb('+gg+','+gg+','+gg+');margin-right:3px;font-size:'+fontSize+'px">'+el+'</span>';
+       // var elMark = '<span style="color:white;padding:.1em">'+el+'</span>';
         fontSize-=1;
         htmlMarkup+=elMark;
     }
-    return htmlMarkup; 
+    return htmlMarkup;
 }
 
-/* http://tools.ietf.org/html/rfc5545 
+
+/* http://tools.ietf.org/html/rfc5545
    This will go up to the minutes */
 
 
-function durationToMinutes(strDuration) { 
-  	// example P15DT5H0M20S 
+function durationToMinutes(strDuration) {
+  	// example P15DT5H0M20S
 	var countMin = 0;
-	if(strDuration.indexOf('P') > -1 ) { 
+	if(strDuration.indexOf('P') > -1 ) {
  		strDuration=strDuration.split('P')[1];
-		if(strDuration.indexOf('D') > -1 ) { 
+		if(strDuration.indexOf('D') > -1 ) {
 			var splitter = strDuration.split('D');
 			strDuration=splitter[1];
 			countMin += parseInt(splitter[0])*60*24;
-		} 
-		if(strDuration.indexOf('T') > -1) { 
+		}
+		if(strDuration.indexOf('T') > -1) {
 			strDuration=strDuration.split('T')[1];
 			if(strDuration.indexOf('H') > -1 ) {
 				var splitter=strDuration.split('H');
@@ -47,10 +58,10 @@ function durationToMinutes(strDuration) {
 				strDuration=splitter[1];
 				countMin += parseInt(splitter[0]);
 			}
-		} 
-	} 
+		}
+	}
 	return countMin;
-} 
+}
 
 function eventsBySortedHours(values) {
    var array_with_keys = [];
@@ -80,16 +91,15 @@ function getUnicodeCharacter(cp) {
     }
 }
 
-function strToMins(item) { 
-  var currHour  = item.split(':'); 
+function strToMins(item) {
+  var currHour  = item.split(':');
   return parseInt(currHour[0])*60+parseInt(currHour[1]);
-} 
+}
 
 var dateUtil =  {
  mos: ['Janeiro','Fevereito','Março','Abril','Maio','Junho','Julho','Agosto','Setembro','Outubro','Novembro','Dezembro'],
-  getPtBrMonth: function () { 
+  getPtBrMonth: function () {
     var ddd = new Date();
     return this.mos[ddd.getMonth()];
   }
 }
-
