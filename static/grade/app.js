@@ -284,7 +284,7 @@ var app = {
                     var addStyle='';
                     if(probeElement.flag) {
                         delta=delta+these.chunkHourSpace;
-                        addStyle+='background:rgb(0,0,70);color:white';
+                        addStyle+='background:rgb(0,0,70);color:white ! important';
                         //marcio
                     }
                     var dateTodayNow = new Date();
@@ -294,7 +294,7 @@ var app = {
                            addStyle='background:rgb(0,0,170);color:white ! important;';
                         }
                         if(probeElement.end<thresholdHourNow) {
-                           addStyle='background:rgb(0,70,0);color:white;';
+                           addStyle='background:rgb(0,70,0);color:white ! important;';
                         }
                     }
 
@@ -320,28 +320,28 @@ var app = {
 			   }
 
 			   if(probeElement.type == 'slices') {
-                                var hour = probeElement.value;
-                                var delta = probeElement.height;
+              var hour = probeElement.value;
+              var delta = probeElement.height;
 
-				if(!delta) { delta=these.chunkHourSpace; }
-				$(this).addClass('innerHour');
-				var localWidth='50px';
-				var hourSliceId = 'hourSlice_'+Math.random();
-				var strHH = ''+Math.floor(parseInt(hour)/60);
-				var strMM = ''+parseInt(hour)%60;
-				if(strMM<10) { strMM+='0'; }
-				var strProposal = strHH+':'+strMM;
+              if(!delta) { delta=these.chunkHourSpace; }
+              $(this).addClass('innerHour');
+              var localWidth='50px';
+              var hourSliceId = 'hourSlice_'+Math.random();
+              var strHH = ''+Math.floor(parseInt(hour)/60);
+              var strMM = ''+parseInt(hour)%60;
+              if(strMM<10) { strMM+='0'; }
+              var strProposal = strHH+':'+strMM;
 
-				if(probeElement.flag) {
-					strProposal='';
-					delta=these.chunkHourSpace;
-				}
-				$(this).attr("style",'width:'+localWidth+';height:'+these.fixScaleHeight(delta)+'px;');
-			 	$(this).html('<div id="'+hourSliceId+'" class="innerInnerHour" style="display:inline-block;padding:0px"><div>'+strProposal+'</div></div>');
+              if(probeElement.flag) {
+              strProposal='';
+              delta=these.chunkHourSpace;
+              }
+              $(this).attr("style",'width:'+localWidth+';height:'+these.fixScaleHeight(delta)+'px;');
+              $(this).html('<div id="'+hourSliceId+'" class="innerInnerHour" style="display:inline-block;padding:0px"><div>'+strProposal+'</div></div>');
 
-				// This -20 is due to the padding and the 4 is for borders?
-	  			var elWidth = document.getElementById(hourSliceId).offsetWidth;
-			   }
+              // This -20 is due to the padding and the 4 is for borders?
+              var elWidth = document.getElementById(hourSliceId).offsetWidth;
+              }
 
 			   if(probeElement.type == 'header') {
                                        var room = probeElement.value;
