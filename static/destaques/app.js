@@ -45,6 +45,7 @@ var app =  {
 	} ,
 
 	popRequest : function() {
+
 		if (this.picQueue.length == 0) return false;
 
 		var obj = this.picQueue.pop();
@@ -69,6 +70,7 @@ var app =  {
 		}
 
 		return true;
+		
 	},
 
 	transitionTo: function (t,d, qrLink) {
