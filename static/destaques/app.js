@@ -49,7 +49,7 @@ var app =  {
 
 		var obj = this.picQueue.pop();
 		var t = obj.title;
-		var d = obj.descFull;
+		var d = obj.desc;
 		var qrLink = obj.externalLink;
 		var src = obj.src;
 
@@ -78,20 +78,20 @@ var app =  {
 		k.innerHTML = '<div class="flex title" >'+t+'</div><div class="flex" data-flex="expand"></div><div class="flex shade"><table border="0"><tr><td align="center" valign="middle" id="qrplaceholder"></td><td valign="top" class="description">'+d+'</td></tr></table></div>';
 
 		var t = 4;
-        var mm = "-moz-transition-property: opacity; -moz-transition-duration:"+t+"s;opacity:0 ; "
-        var oo = "-o-transition-property: opacity; -o-transition-duration:"+t+"s;opacity:0 ; "
-        var ww = "-webkit-transition-property: opacity; -webkit-transition-duration:"+t+"s;opacity:0 ; "
-        this.background.setAttribute("style", mm  + oo + ww);
+		var mm = "-moz-transition-property: opacity; -moz-transition-duration:"+t+"s;opacity:0 ; "
+		var oo = "-o-transition-property: opacity; -o-transition-duration:"+t+"s;opacity:0 ; "
+		var ww = "-webkit-transition-property: opacity; -webkit-transition-duration:"+t+"s;opacity:0 ; "
+		this.background.setAttribute("style", mm  + oo + ww);
 		var old = this.element.firstChild;
 		this.element.insertBefore(k, this.element.firstChild);
 		this.element.removeChild(old);
 
-        if(qrLink.indexOf("http")>-1) {
-            document.getElementById('qrplaceholder').innerHTML='<img id="qrcode" style="height:92px" ></img>';
-            update_qrcode(qrLink);
-        }
+	  if(qrLink.indexOf("http")>-1) {
+	      document.getElementById('qrplaceholder').innerHTML='<img id="qrcode" style="height:92px" ></img>';
+	      update_qrcode(qrLink);
+	  }
 
-        refreshFlex();
+	  refreshFlex();
 		var self = this;
 		setTimeout( function(){self.updateFeed()},8000);
 		return true;
