@@ -20,13 +20,11 @@
      t8l.loaded(function () {
        // transport.setUrl('https://www.google.com/calendar/ical/8osmf16hks86iaamrvo31hnq7s%40group.calendar.google.com/public/basic.ics');
         transport.setUrl('/channel/calendario.txt');
-	//transport.setOutput();
   	    transport.init();
-	    transport.start(function (evento) {
-            app.init(evento);
-		    app.start(['19','20','21']);
-	    });
-
+  	    transport.start(function (evento) {
+          app.init(evento);
+          app.start(['19','20','21']);
+	      });
      });
     </script>
     <style> body { } </style>
@@ -37,12 +35,10 @@
     <div id='container'>
     </div>
     <div id='bye'>
-<center>
-
-        <img src='../vendor/bye.jpg' width='100%'>
-</center>
+        <center>
+          <img src='../vendor/bye.jpg' width='100%'>
+        </center>
     </div>
-
     <div id='temp' style='display:none'></div>
   </body>
 </html>

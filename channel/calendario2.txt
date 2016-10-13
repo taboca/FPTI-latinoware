@@ -1,0 +1,348 @@
+BEGIN:VCALENDAR
+PRODID:-//Latinoware.org//LAPSI Latinoware 2.12//EN
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Program Latinoware 2016
+X-WR-TIMEZONE:America/Sao_Paulo
+X-WR-CALDESC:
+BEGIN:VEVENT
+DTSTART:20161019T160000Z
+DURATION:PT240M
+DTSTAMP:20161012T212740Z
+UID:113@2@137@1676
+CREATED:20161012T212740Z
+DESCRIPTION:Conceito: Tenho um sistema GNU/Linux instalado em uma máquina r
+ eal ou virtual.\nTransplantar é levar essa instalação para outra máquina re
+ al ou virtual\, podendo alterar sistemas de arquivos\, partições\, etc. sem
+  precisar re-instalar um sistema.\nMuito útil para migrações de ambientes r
+ eais e virtuais.\nPúblico alvo: Técnicos\, profissionais de informática\, u
+ suários de GNU/Linux em geral.\nRequisitos de conhecimento: Conhecimentos b
+ ásicos do uso de GNU/Linux.\nCarga horária: 2 a 3h\nRecursos necessários: P
+ rojetor multimídia\, bancadas com tomada. Ideal que o participante leve seu
+  NOtebook
+LAST-MODIFIED:20160914T204413Z
+LOCATION:LAB1
+SEQUENCE:2
+STATUS:CONFIRMED
+SUMMARY:Ensinando e praticando o \"\"transplante\"\" de uma instalação Debi
+ an GNU/Linux.
+TRANSP:TRANSPARENT
+CATEGORIES:Mini DebConf(#000000/#50C764)
+CONTACT:Paulo Oliveira Kretcheu
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20161019T160000Z
+DURATION:PT240M
+DTSTAMP:20161012T212740Z
+UID:113@2@138@1724
+CREATED:20161012T212740Z
+DESCRIPTION:Oficina Internet das Coisas (Arduino + Raspberry)
+LAST-MODIFIED:20160914T204424Z
+LOCATION:LAB2
+SEQUENCE:2
+STATUS:CONFIRMED
+SUMMARY:Oficina Internet das Coisas (Arduino + Raspberry)
+TRANSP:TRANSPARENT
+CATEGORIES:Hardware e Robótica(#ffffff/#A58400)
+CONTACT:Bruno de Loyola Herides
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20161019T160000Z
+DURATION:PT240M
+DTSTAMP:20161012T212740Z
+UID:113@2@139@1829
+CREATED:20161012T212740Z
+DESCRIPTION:Nesta oficina será apresentado módulo “Ler”\, do  software Luz 
+ do Saber que é um recurso didático que tem por objetivo contribuir para a a
+ lfabetização de crianças\, além de promover a inserção na cultura digital. 
+ É um software de autoria embasado primordialmente\, na teoria do educador P
+ aulo Freire. Considera também algumas contribuições de Emilia Ferreiro e An
+ a Teberosky acerca do processo de aquisição do código linguístico. Atualmen
+ te\, o mesmo disponibiliza cinco módulos: “Começar”\, “Ler”\, \"Escrever\"\
+ , \"Aplicativos\" e o \"Professor\". O primeiro é composto por 10 atividade
+ s que estimulam através de jogos\, o conhecimento dos fonemas e grafemas qu
+ e compõem o nome do aluno e\, paralelamente\, desenvolve as competências ne
+ cessárias ao uso do mouse e do teclado. O módulo “Ler” pode ser autorado. I
+ sto significa que o professor pode criar as suas atividades adaptadas ao co
+ ntexto do aluno\, assim como também realizar alterações nas aulas já existe
+ ntes. Existem atualmente 36 atividades estruturais (modelos)\, nas quais o 
+ aluno pode desenvolver de modo lúdico\, as competências necessárias para ap
+ rendizagem da leitura e escrita. O software já conta com a proposta de 13 a
+ ulas que possuem várias atividades cada.
+LAST-MODIFIED:20161003T204929Z
+LOCATION:LAB3
+SEQUENCE:2
+STATUS:CONFIRMED
+SUMMARY:Elaborando atividades educativas com o Software Luz do saber
+TRANSP:TRANSPARENT
+CATEGORIES:Educação(#ffffff/#251F2F)
+CONTACT:Marcos Dionísio Ribeiro do Nascimento
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20161019T160000Z
+DURATION:PT240M
+DTSTAMP:20161012T212740Z
+UID:113@2@140@1826
+CREATED:20161012T212740Z
+DESCRIPTION:Apresentar as funcionalidades disponíveis no DSGTools no contex
+ to da produção de geoinformação aderente à Especificação Técnica para Estru
+ turação de Dados Geoespaciais Vetoriais (ET-EDGV) homologada pela CONCAR.
+LAST-MODIFIED:20161005T155833Z
+LOCATION:LAB4
+SEQUENCE:2
+STATUS:CONFIRMED
+SUMMARY:Produzindo geoinformação de acordo com normas e padrões nacionais c
+ om o DSGTools
+TRANSP:TRANSPARENT
+CATEGORIES:LatinoGEO(#000000/#2FBAB9)
+CONTACT:Luiz Claudio Oliveira de Andrade
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20161020T120000Z
+DURATION:PT240M
+DTSTAMP:20161012T212740Z
+UID:114@1@137@1732
+CREATED:20161012T212740Z
+DESCRIPTION:Resumo da palestra: Minicurso destinado a produção de um painel
+  de indicadores utilizando Pentaho/CTools.
+LAST-MODIFIED:20160914T212053Z
+LOCATION:LAB1
+SEQUENCE:1
+STATUS:CONFIRMED
+SUMMARY:Criando dashboards com Pentaho
+TRANSP:TRANSPARENT
+CATEGORIES:Empreendedorismo e Negócios(#ffffff/#8E0CBC)\,Empreendedorismo e
+  Negócios(#ffffff/#8E0CBC)
+CONTACT:Alviane Patricia Rocha Miranda
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20161020T120000Z
+DURATION:PT240M
+DTSTAMP:20161012T212740Z
+UID:114@1@138@1821
+CREATED:20161012T212740Z
+DESCRIPTION:Descrição: utilização da linguagem Python aliada ao software QG
+ IS. \nRequisitos: o aluno deve ter um notebook com o QGIS 2.14 instalado\, 
+ e no local\, ter acesso a Internet. Não precisa conhecer Python\, pois será
+  mostrado uma introdução de Python.
+LAST-MODIFIED:20160927T210744Z
+LOCATION:LAB2
+SEQUENCE:1
+STATUS:CONFIRMED
+SUMMARY:Mini Curso de Python no QGIS
+TRANSP:TRANSPARENT
+CATEGORIES:LatinoGEO(#000000/#2FBAB9)
+CONTACT:Luiz Motta
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20161020T120000Z
+DURATION:PT240M
+DTSTAMP:20161012T212740Z
+UID:114@1@139@1828
+CREATED:20161012T212740Z
+DESCRIPTION:Nesta oficina será apresentado de forma práticas ferramentas qu
+ e podem ser usadas na escola para o ensino de programação para crianças e a
+ dolescentes\, utilizando ferramentas livres e gratuitas\, bem como materiai
+ s didáticos de auxílio ao professor para o processo.
+LAST-MODIFIED:20161003T204638Z
+LOCATION:LAB3
+SEQUENCE:1
+STATUS:CONFIRMED
+SUMMARY:Ensinando programação para crianças
+TRANSP:TRANSPARENT
+CATEGORIES:Educação(#ffffff/#251F2F)
+CONTACT:Francisco Isidro Massetto
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20161020T120000Z
+DURATION:PT240M
+DTSTAMP:20161012T212740Z
+UID:114@1@140@1863
+CREATED:20161012T212740Z
+DESCRIPTION:Conheça o MONGODB\, um banco de dados não relacional.
+LAST-MODIFIED:20161010T140812Z
+LOCATION:LAB4
+SEQUENCE:1
+STATUS:CONFIRMED
+SUMMARY:Mongo DB - Banco de dados não relacional
+TRANSP:TRANSPARENT
+CATEGORIES:Banco de Dados(#ffffff/#0097F1)
+CONTACT:Christiano Anderson
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20161020T160000Z
+DURATION:PT240M
+DTSTAMP:20161012T212740Z
+UID:114@2@137@1812
+CREATED:20161012T212740Z
+DESCRIPTION:Descubra as possibilidade da plataforma que dá vida à rede Soft
+ wareLivre.org\, à plataforma da Economia Solidária Cirandas.net\, ao Blogoo
+ sfero\, ao Participa.br e ao Portal da Juventude\, entre vários outros. Sai
+ ba como montar e customizar seu blog\, explorar as ferramentas de discussão
+ \, construção colaborativa de documentos\, priorização de ideias\, portfóli
+ os online\, agendas de eventos\, e descubra também como contribuir para o d
+ esenvolvimento desse projeto de Software Livre mesmo sem ser desenvolvedor.
+LAST-MODIFIED:20160927T211504Z
+LOCATION:LAB1
+SEQUENCE:2
+STATUS:CONFIRMED
+SUMMARY:Noosfero para comunidades: conheça a plataforma livre para criação 
+ de redes sociais
+TRANSP:TRANSPARENT
+CATEGORIES:Frameworks\, CMS e Linguagens(#ffffff/#F7322D)
+CONTACT:Mariel Rosauro Zasso
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20161020T160000Z
+DURATION:PT240M
+DTSTAMP:20161012T212740Z
+UID:114@2@138@1821
+CREATED:20161012T212740Z
+DESCRIPTION:Descrição: utilização da linguagem Python aliada ao software QG
+ IS. \nRequisitos: o aluno deve ter um notebook com o QGIS 2.14 instalado\, 
+ e no local\, ter acesso a Internet. Não precisa conhecer Python\, pois será
+  mostrado uma introdução de Python.
+LAST-MODIFIED:20160927T210752Z
+LOCATION:LAB2
+SEQUENCE:2
+STATUS:CONFIRMED
+SUMMARY:Mini Curso de Python no QGIS
+TRANSP:TRANSPARENT
+CATEGORIES:LatinoGEO(#000000/#2FBAB9)
+CONTACT:Luiz Motta
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20161020T160000Z
+DURATION:PT240M
+DTSTAMP:20161012T212740Z
+UID:114@2@139@1802
+CREATED:20161012T212740Z
+DESCRIPTION:As Expressões Regulares são usadas em todas as linguagens atuai
+ s e em todos os bons editores. São ferramentas poderosíssimas que auxiliam 
+ sobremaneira à\nprogramação\, encurtando o tempo necessário para desenvolvi
+ mento deaplicativos.\n\nEste mini curso será executado em ambiente Shell e 
+ para tal\, além de Expressões Regulares\, o instrutor irá ensinar também o 
+ uso das instruções sed e grep.\n\nAo final do treinamento\, o aluno terá ca
+ pacidade de pesquisar\, alterar valores e criticar dados de arquivos via li
+ nha de programação\, sendo isso tudo feito\, claro\, em somente uma linha d
+ e código. 8^)
+LAST-MODIFIED:20161003T204940Z
+LOCATION:LAB3
+SEQUENCE:2
+STATUS:CONFIRMED
+SUMMARY:Mini Curso de Regex: Fácil e Divertido!
+TRANSP:TRANSPARENT
+CATEGORIES:Frameworks\, CMS e Linguagens(#ffffff/#F7322D)
+CONTACT:Julio Cezar Neves
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20161020T160000Z
+DURATION:PT240M
+DTSTAMP:20161012T212740Z
+UID:114@2@140@1841
+CREATED:20161012T212740Z
+DESCRIPTION:Oficina prática de como elaborar atividades na plataforma moodl
+ e como recurso didático do Ensino Fundamental - Séries Inicias
+LAST-MODIFIED:20161005T135253Z
+LOCATION:LAB4
+SEQUENCE:2
+STATUS:CONFIRMED
+SUMMARY:Utilizando Moodle como ferramenta no Ensino Fundamental - Séries In
+ iciais
+TRANSP:TRANSPARENT
+CATEGORIES:Educação(#ffffff/#251F2F)
+CONTACT:Marcia Regina Kaminski
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20161021T120000Z
+DURATION:PT240M
+DTSTAMP:20161012T212740Z
+UID:115@1@137@1698
+CREATED:20161012T212740Z
+DESCRIPTION:breve
+LAST-MODIFIED:20160909T131219Z
+LOCATION:LAB1
+SEQUENCE:1
+STATUS:CONFIRMED
+SUMMARY:Primeira Micro Maratona de Programação
+TRANSP:TRANSPARENT
+CATEGORIES:Frameworks\, CMS e Linguagens(#ffffff/#F7322D)
+CONTACT:Aléssio Miranda Junior
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20161021T120000Z
+DURATION:PT240M
+DTSTAMP:20161012T212740Z
+UID:115@1@138@1810
+CREATED:20161012T212740Z
+DESCRIPTION:Vamos desenvolver habilidades para identificação de novos cenár
+ ios e criação de modelos de negócios de alto impacto
+LAST-MODIFIED:20160926T181222Z
+LOCATION:LAB2
+SEQUENCE:1
+STATUS:CONFIRMED
+SUMMARY:O DIFERENCIAL NAS DIFERENÇAS
+TRANSP:TRANSPARENT
+CATEGORIES:Empreendedorismo e Negócios(#ffffff/#8E0CBC)\,Empreendedorismo e
+  Negócios(#ffffff/#8E0CBC)
+CONTACT:Sergio Accioly
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20161021T120000Z
+DURATION:PT240M
+DTSTAMP:20161012T212740Z
+UID:115@1@139@1840
+CREATED:20161012T212740Z
+DESCRIPTION:O HotPotatoes é um software livre para elaboração de atividades
+  interativas e muito fácil de aprender. Mesmo usuários com pouco conhecimen
+ to em informática conseguem usar. Com a inserção das tecnologias na educaçã
+ o\, umas das vantagens em utilizá-lo é que permite ao professor conceber at
+ ividades mais dinâmicas e atrativas para os alunos\, além de poupar tempo n
+ a hora de revisar conteúdos e aplicar testes de caráter diagnóstico\, seja 
+ online ou off-line.
+LAST-MODIFIED:20161005T135243Z
+LOCATION:LAB3
+SEQUENCE:1
+STATUS:CONFIRMED
+SUMMARY:Criando atividades educativas com o Hotpotatoes
+TRANSP:TRANSPARENT
+CATEGORIES:Educação(#ffffff/#251F2F)
+CONTACT:Rosemara da Silva
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20161021T160000Z
+DURATION:PT240M
+DTSTAMP:20161012T212740Z
+UID:115@2@137@1698
+CREATED:20161012T212740Z
+DESCRIPTION:breve
+LAST-MODIFIED:20160909T131228Z
+LOCATION:LAB1
+SEQUENCE:2
+STATUS:CONFIRMED
+SUMMARY:Primeira Micro Maratona de Programação
+TRANSP:TRANSPARENT
+CATEGORIES:Frameworks\, CMS e Linguagens(#ffffff/#F7322D)
+CONTACT:Aléssio Miranda Junior
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20161021T160000Z
+DURATION:PT240M
+DTSTAMP:20161012T212740Z
+UID:115@2@138@1824
+CREATED:20161012T212740Z
+DESCRIPTION:O minicurso apresentará a linguagem R dando ênfase ao manuseio 
+ de dados espaciais\, vetoriais e matriciais.\n\nRequisitos: o aluno deve te
+ r um notebook com o R e o RStudio instalado\, e no local\, ter acesso a Int
+ ernet.
+LAST-MODIFIED:20161005T155823Z
+LOCATION:LAB2
+SEQUENCE:2
+STATUS:CONFIRMED
+SUMMARY:Análise espacial no R
+TRANSP:TRANSPARENT
+CATEGORIES:LatinoGEO(#000000/#2FBAB9)
+CONTACT:Felipe Sodré Mendes Barros
+END:VEVENT
+END:VCALENDAR

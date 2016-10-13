@@ -1,56 +1,56 @@
-body { 
+body {
 
-} 
+}
 
-.gv { 
+.gv {
   clear:both;
-} 
+}
 
-.gh { 
+.gh {
   display:inline;
   float:left;
 }
 
-.inner { 
+.inner {
   overflow:hidden;
-} 
+}
 
 /*
   background:rgb(70,70,70);
   */
-.innerInnerCell { 
+.innerInnerCell {
   margin-left:2px;
   font-size:13px;
   padding:2px;
-  background: -moz-linear-gradient( -90deg, rgb(70,70,70), rgb(40,40,40), rgb(40,40,40));
+  background: linear-gradient( 135deg, rgba(5,5,5,.1), rgba(5,5,5,0), rgba(255,255,255,.2));
   height:100%;
   text-overflow:ellipsis;
   word-wrap:break-word;
-  color:white;
-} 
+  color:black;
+}
 
-.innerNone { 
-  background: -moz-linear-gradient( 270deg, rgba(5,5,5,.2), rgba(255,255,255,0), rgba(255,255,255,0));
-} 
+.innerNone {
+  background: linear-gradient( 180deg, rgba(5,5,5,.1), rgba(255,255,255,0), rgba(255,255,255,0), rgba(255,255,255,0));
+}
 
-.innerHour { 
-  background: -moz-linear-gradient( 270deg, rgba(5,5,5,.2), rgba(255,255,255,0), rgba(255,255,255,0));
+.innerHour {
+  background: linear-gradient( 180deg, rgba(5,5,5,.1), rgba(255,255,255,0), rgba(255,255,255,0), rgba(255,255,255,0));
   text-align:center;
-} 
+}
 
-.innerInnerHour { 
+.innerInnerHour {
   margin-top:6px;
-} 
+}
 
-.innerHeader { 
-} 
- 
-.innerInnerHeader { 
+.innerHeader {
+}
+
+.innerInnerHeader {
   padding:.5em;
   padding-left:1em;
   margin-left:2px;
   margin-bottom:2px;
-  background: -moz-linear-gradient( -90deg, rgba(20,20,20,.3), rgba(10,10,10,.5));
+  background: linear-gradient( 180deg, rgba(150,0,100,.2), rgba(150,0,100,.4));
   font-weight:bold;
   height:50px;
   font-size:15px;
@@ -59,9 +59,8 @@ body {
   color:white;
   border-top-left-radius:20px;
   border-top-right-radius:20px;
-} 
+}
 
-.innerInnerCorner { 
+.innerInnerCorner {
   margin:.5em;
-} 
-
+}

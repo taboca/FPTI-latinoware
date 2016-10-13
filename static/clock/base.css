@@ -1,18 +1,22 @@
 @import url("http://fonts.googleapis.com/css?family=Varela");
 
-html, body { margin:0; padding:0; overflow:hidden } 
+html, body { margin:0; padding:0; overflow:hidden }
 
-body { margin-top:7px} 
 
-* { 
+* {
   font-family: 'Varela', sans-serif;
-} 
+}
 
-.datedate, .datetime  { 
-  font-size:16pt;
-  color:black;
+.datedate {
+  font-size:20pt;
+  color:rgb(220,50,120);
   font-weight:bold;
   text-align:right;
-} 
+}
 
-
+.datetime  {
+  font-size:20pt;
+  color:rgb(120,120,120);
+  font-weight:bold;
+  text-align:right;
+}

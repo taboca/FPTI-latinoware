@@ -3,3 +3,4 @@ URL_FOTOS = '/channel/latinoware.json'
 //URL_FOTOS = '/channel/latinoware-cache.json'
 URL_TWIT = "/channel/latinoware.txt";
 URL_NOTICIAS = "/channel/destaques.xml";
+TEMPO_REFRESH = 10000;
