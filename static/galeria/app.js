@@ -1,20 +1,20 @@
 
 var app =  {
     feed        : null,
-	cycle: 0,
+	  cycle: 0,
     feedURL     : URL_FOTOS,
-    refElement   : null, 
+    refElement   : null,
     imageNumber  : 0,
     element      : null,
     picWidth     : 230,
     picHeight    : 230,
     timer        : 2000,
-    picQueue     : null, 
-    totalElements: 8, 
-    refContainers: null, 
-    refContainerCycle : -1, 
-		
-	start: function () { 
+    picQueue     : null,
+    totalElements: 8,
+    refContainers: null,
+    refContainerCycle : -1,
+
+	start: function () {
 
 		this.picQueue = new Array();
 		this.element = document.createElement('div');
@@ -24,7 +24,7 @@ var app =  {
 		this.element.appendChild(this.refElement);
 		this.refContainers = new Array();
 
-		for(var i=0; i<this.totalElements; i++) { 
+		for(var i=0; i<this.totalElements; i++) {
 			var k = document.createElement("span");
 			k.style.width = this.picWidth + "px";
 			k.style.height= this.picHeight + "px";
@@ -47,10 +47,10 @@ var app =  {
     flipContainers:0,
 
 	popPic: function() {
-		if (this.picQueue.length == 0) { 
+		if (this.picQueue.length == 0) {
 			var self = this;
 			this.feed.load( function (e) { self.__feedUpdated(e) } );
-		} else { 
+		} else {
 			var envelope = this.picQueue.pop();
 			var t = envelope.url;
 			var eText = envelope.text;
@@ -59,84 +59,83 @@ var app =  {
 			var eFrom = '';
 
 			this.refContainerCycle++;
-			if(this.refContainerCycle == this.totalElements) { 
+			if(this.refContainerCycle == this.totalElements) {
 				this.refContainerCycle=0;
-			} 
+			}
 			var currentContainer = this.refContainers[this.refContainerCycle];
 			these = this;
 			$(currentContainer).find("img").attr('class','fadeout');
-			setTimeout(function () { 
+			setTimeout(function () {
 				currentContainer.innerHTML = "<div class='base'> <div class='innerImage'><img id='posterimage"+these.imageNumber+"' src='"+t+"' class='loading'></div><div class='innerBase'><div class='innerSpace'></div><div class='innerCaption'>"+eText+"</div></div></div>";
-				these.doExpire = true; 
+				these.doExpire = true;
 				//setTimeout(function () { these.tryExpire() }, these.timer*20);
 				setTimeout(function () { these.imageLoaded() }, these.timer)
 				//document.getElementById("posterimage"+these.imageNumber).onload = function () { these.imageLoaded() };
 
 			}, these.timer)
-			
+
 			return true;
-		} 
+		}
 
 	},
 
-    tryExpire: function () { 
-    		if(this.doExpire) { 
+    tryExpire: function () {
+    		if(this.doExpire) {
                  location.reload();
     		}
     },
-     
-    doExpire : true, 
 
-	imageLoaded : function() { 
+    doExpire : true,
 
-		//this.doExpire = false; 
+	imageLoaded : function() {
+
+		//this.doExpire = false;
 
 		var currImage =  document.getElementById("posterimage"+this.imageNumber);
-		var x= parseInt(currImage.width); 
-		var y= parseInt(currImage.height); 
+		var x= parseInt(currImage.width);
+		var y= parseInt(currImage.height);
 
 		if(x>=y) {
 			currImage.width=this.picWidth;
 			var yy = parseInt ((this.picHeight-parseInt((this.picWidth*y)/x))/2 );
 			currImage.style.marginTop=yy+"px";
-		} else { 
+		} else {
 			currImage.height=this.picHeight;
 			var xx = parseInt ((this.picWidth-parseInt((this.picHeight*x)/y))/2 );
 			currImage.style.marginLeft=xx+"px";
-		} 
+		}
 		currImage.className='active';
 		this.imageNumber++;
         this.kickFadeIn();
 	},
 
-	kickFadeIn : function () { 
-        this.cycle++;	
-        if(this.cycle<=this.totalElements) { 
+	kickFadeIn : function () {
+        this.cycle++;
+        if(this.cycle<=this.totalElements) {
             var scopedThis = this;
             setTimeout( function () { scopedThis.popPic() }, this.timer);
-        }  else { 
+        }  else {
             this.cycle=0;
             this.kickFadeIn();
-        } 
+        }
 	},
 
 	__feedUpdated : function(result) {
 		this.dataOut = new Array();
-		if(result.error) { }; 
-		var text = result.xmlDocument; 
+		if(result.error) { };
+		var text = result.xmlDocument;
 		var objs = $.parseJSON(text);
 		for( var k in objs) {
 			var src = (objs[k].images.standard_resolution);
 			var text= '';
 			var from ='';
-			if(objs[k].caption) { 
+			if(objs[k].caption) {
 			  text = (objs[k].caption.text);
 			  from = (objs[k].caption.from.username);
-			} 
+			}
             this.picQueue.push({"url":src.url,"text":text, "from":from});
 
-		} 
+		}
 		this.kickFadeIn();
 	}
 }
-
