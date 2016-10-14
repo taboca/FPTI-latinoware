@@ -11,18 +11,12 @@ export PATH=$PATH:/usr/local/bin
 export NODE_PATH=$NODE_PATH:/usr/local/lib/node_modules
 
 
-export HOME=/root 
+export HOME=/root
 
 case "$1" in
   start)
-    /usr/local/bin/forever -p /root/.forever --sourceDir=/home/jell/TelaSocial-Mediator start mediator.js app ./scripts/httpserver.json
-    /usr/local/bin/forever -p /root/.forever --sourceDir=/home/jell/TelaSocial-Mediator start mediator.js app ./scripts/destaques.json
-    /usr/local/bin/forever -p /root/.forever --sourceDir=/home/jell/TelaSocial-Mediator start mediator.js app ./scripts/twitter-grab.json
-    /usr/local/bin/forever -p /root/.forever --sourceDir=/home/jell/TelaSocial-Mediator start mediator.js app ./scripts/instagram.json
-    /usr/local/bin/forever -p /root/.forever --sourceDir=/home/jell/TelaSocial-Mediator start mediator.js app ./scripts/lapsi.json
-    /usr/local/bin/forever -p /root/.forever --sourceDir=/home/jell/TelaSocial-Mediator start mediator.js app ./scripts/lapsi-minicursos.json
-    /usr/local/bin/forever -p /root/.forever --sourceDir=/home/jell/TelaSocial-Mediator start mediator.js app ./scripts/screenshots.json
-
+    /usr/local/bin/forever -p /root/.forever --sourceDir=/home/marcio2/TelaSocial-Mediator start mediator.js app ./scripts/httpserver.json
+    /usr/local/bin/forever -p /root/.forever --sourceDir=/home/marcio2/TelaSocial-Mediator start mediator.js app ./scripts/twitter.json
     ;;
   stop)
     exec /usr/local/bin/forever stopall
