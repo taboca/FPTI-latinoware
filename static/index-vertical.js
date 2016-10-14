@@ -6,11 +6,11 @@ $(document).ready(function() {
    /* The exercise here is that we want to load the sub elements and internal
       iframe pages are ready. */
 
-   register("/main/footer", "cabecalho", "./patrocinadores/index.html?mode=tv", iframeTemplate);
+   //register("/main/footer", "cabecalho", "./patrocinadores/index.html?mode=tv", iframeTemplate);
    register("/main/topheader", "topo", "./header-vertical/index.html", iframeTemplate);
    register("/main/topheader", "topo", "./header-vertical/index.html", iframeTemplate);
    register("/main/topmiddle", "destaques", "./destaques/index.html", iframeTemplate);
-   register("/main/bottomsection2", "tweeter", "./twitter/index.html", iframeTemplate);
+   register("/main/bottomsection2", "twitter", "./twitter/index.html", iframeTemplate);
    register("/main/topmiddleright", "noticias", "./noticias/index.html", iframeTemplate);
    register("/main/bottomsection", "identica", "./galeria/index.html", iframeTemplate);
 
