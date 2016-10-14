@@ -2,18 +2,14 @@
 
 $(document).ready(function() {
 
-   /* This needs to grows to become the grid system placement */
-   /* The exercise here is that we want to load the sub elements and internal
-      iframe pages are ready. */
-      setTimeout('startEngine()',1000);
+    setTimeout('startEngine()',1000);
 
-   register("/main/middle", "meio", "./grade/index.html", iframeTemplate);
-   register("/main/middle2", "meio2", "./grade-minicursos/index.html", iframeTemplate);
-   register("/main/topheader", "topo", "./header-vertical/index.html", iframeTemplate);
-   register("/main/topheader", "topo", "./header-vertical/index.html", iframeTemplate);
-   register("/main/hora", "hora", "./tempo/index.html", iframeTemplate);
-   register("/main/data", "data", "./tempo/date.html", iframeTemplate);
-   compile();
+    register("/main/middle"    , "meio"  , "./grade/index.html", iframeTemplate);
+    register("/main/middle2"   , "meio2" , "./grade-minicursos/index.html", iframeTemplate);
+    register("/main/topheader" , "topo"  , "./header-vertical/index.html", iframeTemplate);
+    register("/main/hora"      , "hora"  , "./tempo/index.html", iframeTemplate);
+    register("/main/data"      , "data"  , "./tempo/date.html", iframeTemplate);
+    compile();
 
 });
 
