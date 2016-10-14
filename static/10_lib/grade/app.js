@@ -277,7 +277,7 @@ var app = {
 
                 if(probeElement.type=='event') {
                     var el = probeElement.value;
-                    $(this).html('<div class="innerInnerCell">'+doFilter(el.descricao)+'</div>');
+                    $(this).html("<div class='innerInnerCell'>"+doFilter(el.descricao)+"</div>");
                     $(this).addClass('inner');
                     var delta = probeElement.end-probeElement.begin;
 

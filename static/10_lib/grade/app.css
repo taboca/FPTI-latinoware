@@ -1,27 +1,37 @@
 
-html { color: black }
+html {
+		color: black;
+}
 
-h2 { clear:both; padding:.1em; padding-left:1em; margin:.2em; color:black }
+h2 {
+		clear:both; padding:.1em; padding-left:1em; margin:.2em; color:black
+}
 
 .dayStamp {
-	text-align:right;
+		text-align:right;
 }
 
 .mark {
-  color:lightblue;
+		color:lightblue;
 }
 
 .item {
-  font-weight:normal;
- padding-top:1em;
+		font-weight:normal;
+		padding-top:1em;
 }
 
 .talk {
-	font-weight: bold ! important;
+		font-weight: bold ! important;
 }
 
 .title {
-  text-align:center;
-  padding:.6em;
-  line-height:1.5em;
+		text-align:center;
+		padding:.6em;
+		line-height:1.5em;
+}
+
+.topShade {
+	background-image:linear-gradient( 180deg, rgba(0,0,0,.6), rgba(0,0,0,.3));
+	padding:4px;
+	color:rgb(200,200,200);
 }
