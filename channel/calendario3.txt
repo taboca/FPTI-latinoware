@@ -1,0 +1,739 @@
+BEGIN:VCALENDAR
+PRODID:-//Latinoware.org//LAPSI Latinoware 2.12//EN
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Program Latinoware 2016
+X-WR-TIMEZONE:America/Sao_Paulo
+X-WR-CALDESC:
+BEGIN:VEVENT
+DTSTART:20161019T120000Z
+DURATION:PT60M
+DTSTAMP:20161014T121305Z
+UID:117@1@141@1668
+CREATED:20161014T121305Z
+DESCRIPTION:Introdução ao Arduino
+LAST-MODIFIED:20161011T120646Z
+LOCATION:Espaço Flahwl
+SEQUENCE:1
+STATUS:CONFIRMED
+SUMMARY:Introdução ao Arduino
+TRANSP:TRANSPARENT
+CATEGORIES:Hardware e Robótica(#ffffff/#A58400)
+CONTACT:Álvaro Fernandes de Abreu Justen
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20161019T120000Z
+DURATION:PT60M
+DTSTAMP:20161014T121305Z
+UID:117@1@142@1868
+CREATED:20161014T121305Z
+DESCRIPTION:Exposição de Hardwares (Drones\, Impressoras 3D e outras coisas
+ )
+LAST-MODIFIED:20161011T122425Z
+LOCATION:Dumont HackerSpace
+SEQUENCE:1
+STATUS:CONFIRMED
+SUMMARY:Exposição de Hardwares (Drones\, Impressoras 3D e outras coisas)
+TRANSP:TRANSPARENT
+CATEGORIES:Hardware e Robótica(#ffffff/#A58400)
+CONTACT:Dumont HackerSpace
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20161019T130000Z
+DURATION:PT60M
+DTSTAMP:20161014T121305Z
+UID:117@2@141@1786
+CREATED:20161014T121305Z
+DESCRIPTION:Lig (Libre IoT Guile) é um projeto voltado a Internet das Coisa
+ s (IoT - Internet of Things) usando a linguagem oficial do prjoeto GNU\, GN
+ U Guile\, apenas com software e hardware livre.\nNesta palestra serão abord
+ ados temas como software livre\, hardware livre\, robôtica e automação apli
+ cada no gerenciamento da iluminação pública de forma inteligente\, usando s
+ omente software e hardware livre por meio do projeto Lig.
+LAST-MODIFIED:20161011T120700Z
+LOCATION:Espaço Flahwl
+SEQUENCE:2
+STATUS:CONFIRMED
+SUMMARY:Lig: Gerenciamento Inteligente da Iluminação Pública usando Softwar
+ e e Hardware Livr
+TRANSP:TRANSPARENT
+CATEGORIES:Hardware e Robótica(#ffffff/#A58400)\,Segurança(#000000/#E7618B)
+CONTACT:Daniel Pimentel
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20161019T130000Z
+DURATION:PT60M
+DTSTAMP:20161014T121305Z
+UID:117@2@142@1868
+CREATED:20161014T121305Z
+DESCRIPTION:Exposição de Hardwares (Drones\, Impressoras 3D e outras coisas
+ )
+LAST-MODIFIED:20161011T122430Z
+LOCATION:Dumont HackerSpace
+SEQUENCE:2
+STATUS:CONFIRMED
+SUMMARY:Exposição de Hardwares (Drones\, Impressoras 3D e outras coisas)
+TRANSP:TRANSPARENT
+CATEGORIES:Hardware e Robótica(#ffffff/#A58400)
+CONTACT:Dumont HackerSpace
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20161019T140000Z
+DURATION:PT60M
+DTSTAMP:20161014T121305Z
+UID:117@3@141@1685
+CREATED:20161014T121305Z
+DESCRIPTION:Nesta palestra será mostrada a forma a qual o Embarcados foment
+ a o desenvolvimento e ensino de hardware no Brasil. Muita informação é cria
+ da e divulgada diariamente no site e estamos em contato com diversas Startu
+ ps que fazem uso de ferramentas livres para o desenvolvimento de suas empre
+ sas. Apresentarei projetos importantes que estão em curso no Brasil e como 
+ eles foram concebidos\, alem de apresentar detalhes de hardware e metodolog
+ ia de criação dessas eletrônicas.
+LAST-MODIFIED:20161011T120708Z
+LOCATION:Espaço Flahwl
+SEQUENCE:3
+STATUS:CONFIRMED
+SUMMARY:Como o Embarcados fomenta o Hardware Livre no Brasil
+TRANSP:TRANSPARENT
+CATEGORIES:Hardware e Robótica(#ffffff/#A58400)\,Segurança(#000000/#E7618B)
+CONTACT:Thiago Pinheiro Felix da Silva e Lima
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20161019T140000Z
+DURATION:PT60M
+DTSTAMP:20161014T121305Z
+UID:117@3@142@1868
+CREATED:20161014T121305Z
+DESCRIPTION:Exposição de Hardwares (Drones\, Impressoras 3D e outras coisas
+ )
+LAST-MODIFIED:20161011T122432Z
+LOCATION:Dumont HackerSpace
+SEQUENCE:3
+STATUS:CONFIRMED
+SUMMARY:Exposição de Hardwares (Drones\, Impressoras 3D e outras coisas)
+TRANSP:TRANSPARENT
+CATEGORIES:Hardware e Robótica(#ffffff/#A58400)
+CONTACT:Dumont HackerSpace
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20161019T150000Z
+DURATION:PT60M
+DTSTAMP:20161014T121305Z
+UID:117@4@141@1865
+CREATED:20161014T121305Z
+DESCRIPTION:Tudo que você sempre quis saber sobre impressão 3D\, mas nunca 
+ teve coragem de perguntar!
+LAST-MODIFIED:20161011T121042Z
+LOCATION:Espaço Flahwl
+SEQUENCE:4
+STATUS:CONFIRMED
+SUMMARY:Tudo que você sempre quis saber sobre impressão 3D\, mas nunca teve
+  coragem de perguntar!
+TRANSP:TRANSPARENT
+CATEGORIES:Hardware e Robótica(#ffffff/#A58400)
+CONTACT:RazGriz (Guilherme Gonçalves Magalhães)\,Daniel Omar Basconcello Fi
+ lho
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20161019T150000Z
+DURATION:PT60M
+DTSTAMP:20161014T121305Z
+UID:117@4@142@1868
+CREATED:20161014T121305Z
+DESCRIPTION:Exposição de Hardwares (Drones\, Impressoras 3D e outras coisas
+ )
+LAST-MODIFIED:20161011T122434Z
+LOCATION:Dumont HackerSpace
+SEQUENCE:4
+STATUS:CONFIRMED
+SUMMARY:Exposição de Hardwares (Drones\, Impressoras 3D e outras coisas)
+TRANSP:TRANSPARENT
+CATEGORIES:Hardware e Robótica(#ffffff/#A58400)
+CONTACT:Dumont HackerSpace
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20161019T180000Z
+DURATION:PT60M
+DTSTAMP:20161014T121305Z
+UID:117@7@141@1866
+CREATED:20161014T121305Z
+DESCRIPTION:Drones\, Geoprocessamento\, Internet dos Trem e outras coisas n
+ o Agronegócios
+LAST-MODIFIED:20161011T121338Z
+LOCATION:Espaço Flahwl
+SEQUENCE:7
+STATUS:CONFIRMED
+SUMMARY:Drones\, Geoprocessamento\, Internet dos Trem e outras coisas no Ag
+ ronegócios
+TRANSP:TRANSPARENT
+CATEGORIES:Hardware e Robótica(#ffffff/#A58400)
+CONTACT:Thalis Antunes De Souza
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20161019T180000Z
+DURATION:PT60M
+DTSTAMP:20161014T121305Z
+UID:117@7@142@1868
+CREATED:20161014T121305Z
+DESCRIPTION:Exposição de Hardwares (Drones\, Impressoras 3D e outras coisas
+ )
+LAST-MODIFIED:20161011T122438Z
+LOCATION:Dumont HackerSpace
+SEQUENCE:7
+STATUS:CONFIRMED
+SUMMARY:Exposição de Hardwares (Drones\, Impressoras 3D e outras coisas)
+TRANSP:TRANSPARENT
+CATEGORIES:Hardware e Robótica(#ffffff/#A58400)
+CONTACT:Dumont HackerSpace
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20161019T190000Z
+DURATION:PT60M
+DTSTAMP:20161014T121305Z
+UID:117@8@141@1867
+CREATED:20161014T121305Z
+DESCRIPTION:Tecnologia assistiva utilizando hardware e software open source
+LAST-MODIFIED:20161011T122150Z
+LOCATION:Espaço Flahwl
+SEQUENCE:8
+STATUS:CONFIRMED
+SUMMARY:Tecnologia assistiva utilizando hardware e software open source
+TRANSP:TRANSPARENT
+CATEGORIES:Hardware e Robótica(#ffffff/#A58400)
+CONTACT:Jonas Magalhães Costa
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20161019T190000Z
+DURATION:PT60M
+DTSTAMP:20161014T121305Z
+UID:117@8@142@1868
+CREATED:20161014T121305Z
+DESCRIPTION:Exposição de Hardwares (Drones\, Impressoras 3D e outras coisas
+ )
+LAST-MODIFIED:20161011T122440Z
+LOCATION:Dumont HackerSpace
+SEQUENCE:8
+STATUS:CONFIRMED
+SUMMARY:Exposição de Hardwares (Drones\, Impressoras 3D e outras coisas)
+TRANSP:TRANSPARENT
+CATEGORIES:Hardware e Robótica(#ffffff/#A58400)
+CONTACT:Dumont HackerSpace
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20161020T120000Z
+DURATION:PT60M
+DTSTAMP:20161014T121305Z
+UID:118@1@141@1655
+CREATED:20161014T121305Z
+DESCRIPTION:Uma das aplicações da robótica está no campo educacional. A rob
+ ótica se apresenta como um recurso que pode auxiliar no processo de ensino/
+ aprendizagem com soluções eficientes e práticas\, proporcionando\, para os 
+ alunos de informática maior motivação e proximidade do abstrato com o real\
+ , o que torna o ensino­aprendizado bem mais eficiente. Os cursos superiores
+  de informática\, apresentam\, muitas vezes\, um ensino pouco intuitivo em 
+ relação a programação e atividade de programar computadores é considerada u
+ ma tarefa difícil para a maioria das pessoas. É nesse contexto que a palest
+ ra está inserida\, da motivação e da teoria do construcionismo\, buscando t
+ ornar nossos alunos fazedores. O objetivo é apresentar uma proposta de ensi
+ no­aprendizagem de programação voltada para robótica educacional\, que asso
+ cia a placa de prototipagem Arduino\, a linguagem de programação Scratch 2 
+ juntamente de sua extensão s2a_fm adaptada ao Arduino\, na construção de um
+  protótipo de um robô móvel de resgate. Essa metodologia foi utilizada dura
+ nte as aulas lecionadas para o curso de Analise e Desenvolvimento de Sistem
+ as no Instituto Federal do Espirito Santo\, campus Santa Teresa. As aulas p
+ ráticas consistiram na montagem e\nprogramação de um robô. O Scratch foi um
+  facilitador nesse processo de aprendizado desmitificando o conceito que ro
+ bótica é uma ciência complexa e que programar robôs é coisa de outro mundo\
+ , daí o nome “Programação Descomplicada”. Na palestra vamos apresentar o ro
+ bô móvel desenvolvido nas aulas e todos os passos para construção e program
+ ação\, e como essa ideia pode contribuir para democratização da tecnologia\
+ , desenvolvimento social e intelectual do individuo por meio da robótica.
+LAST-MODIFIED:20161011T123044Z
+LOCATION:Espaço Flahwl
+SEQUENCE:1
+STATUS:CONFIRMED
+SUMMARY:PROGRAMAÇÃO DESCOMPLICADA: Scratch / Arduino s2a_fm em Robótica Edu
+ cacional
+TRANSP:TRANSPARENT
+CATEGORIES:Educação(#ffffff/#251F2F)
+CONTACT:Thiago Redighieri
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20161020T120000Z
+DURATION:PT60M
+DTSTAMP:20161014T121305Z
+UID:118@1@142@1869
+CREATED:20161014T121305Z
+DESCRIPTION:Aula de campo Robótica Educacional Cascavel PR
+LAST-MODIFIED:20161011T123044Z
+LOCATION:Dumont HackerSpace
+SEQUENCE:1
+STATUS:CONFIRMED
+SUMMARY:Aula de campo Robótica Educacional Cascavel PR
+TRANSP:TRANSPARENT
+CATEGORIES:Hardware e Robótica(#ffffff/#A58400)
+CONTACT:Thiago Sodre
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20161020T130000Z
+DURATION:PT60M
+DTSTAMP:20161014T121305Z
+UID:118@2@141@1870
+CREATED:20161014T121305Z
+DESCRIPTION:Tecnologias Exponenciais e Singularidade Tecnológica com Intern
+ et das Coisas - IoT
+LAST-MODIFIED:20161011T123108Z
+LOCATION:Espaço Flahwl
+SEQUENCE:2
+STATUS:CONFIRMED
+SUMMARY:Tecnologias Exponenciais e Singularidade Tecnológica com Internet d
+ as Coisas - IoT
+TRANSP:TRANSPARENT
+CATEGORIES:Hardware e Robótica(#ffffff/#A58400)
+CONTACT:Prof. Fábio Marques
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20161020T130000Z
+DURATION:PT60M
+DTSTAMP:20161014T121305Z
+UID:118@2@142@1869
+CREATED:20161014T121305Z
+DESCRIPTION:Aula de campo Robótica Educacional Cascavel PR
+LAST-MODIFIED:20161011T123046Z
+LOCATION:Dumont HackerSpace
+SEQUENCE:2
+STATUS:CONFIRMED
+SUMMARY:Aula de campo Robótica Educacional Cascavel PR
+TRANSP:TRANSPARENT
+CATEGORIES:Hardware e Robótica(#ffffff/#A58400)
+CONTACT:Thiago Sodre
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20161020T140000Z
+DURATION:PT60M
+DTSTAMP:20161014T121305Z
+UID:118@3@141@1871
+CREATED:20161014T121305Z
+DESCRIPTION:UTFPR - Construindo Drones com Hardware Livre
+LAST-MODIFIED:20161011T123821Z
+LOCATION:Espaço Flahwl
+SEQUENCE:3
+STATUS:CONFIRMED
+SUMMARY:UTFPR - Construindo Drones com Hardware Livre
+TRANSP:TRANSPARENT
+CATEGORIES:Hardware e Robótica(#ffffff/#A58400)
+CONTACT:Wesley Karl El Anderson
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20161020T140000Z
+DURATION:PT60M
+DTSTAMP:20161014T121305Z
+UID:118@3@142@1869
+CREATED:20161014T121305Z
+DESCRIPTION:Aula de campo Robótica Educacional Cascavel PR
+LAST-MODIFIED:20161011T123048Z
+LOCATION:Dumont HackerSpace
+SEQUENCE:3
+STATUS:CONFIRMED
+SUMMARY:Aula de campo Robótica Educacional Cascavel PR
+TRANSP:TRANSPARENT
+CATEGORIES:Hardware e Robótica(#ffffff/#A58400)
+CONTACT:Thiago Sodre
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20161020T150000Z
+DURATION:PT60M
+DTSTAMP:20161014T121305Z
+UID:118@4@141@1872
+CREATED:20161014T121305Z
+DESCRIPTION:UTFPR - Experiência com Hardware Livre na acadêmia
+LAST-MODIFIED:20161011T123833Z
+LOCATION:Espaço Flahwl
+SEQUENCE:4
+STATUS:CONFIRMED
+SUMMARY:UTFPR - Experiência com Hardware Livre na acadêmia
+TRANSP:TRANSPARENT
+CATEGORIES:Hardware e Robótica(#ffffff/#A58400)
+CONTACT:Hamilton Pereira da Silva
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20161020T150000Z
+DURATION:PT60M
+DTSTAMP:20161014T121305Z
+UID:118@4@142@1869
+CREATED:20161014T121305Z
+DESCRIPTION:Aula de campo Robótica Educacional Cascavel PR
+LAST-MODIFIED:20161011T123049Z
+LOCATION:Dumont HackerSpace
+SEQUENCE:4
+STATUS:CONFIRMED
+SUMMARY:Aula de campo Robótica Educacional Cascavel PR
+TRANSP:TRANSPARENT
+CATEGORIES:Hardware e Robótica(#ffffff/#A58400)
+CONTACT:Thiago Sodre
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20161020T160000Z
+DURATION:PT60M
+DTSTAMP:20161014T121305Z
+UID:118@5@141@1873
+CREATED:20161014T121305Z
+DESCRIPTION:IoT - Internet das Coisas Livres para vestir
+LAST-MODIFIED:20161011T123844Z
+LOCATION:Espaço Flahwl
+SEQUENCE:5
+STATUS:CONFIRMED
+SUMMARY:IoT - Internet das Coisas Livres para vestir
+TRANSP:TRANSPARENT
+CATEGORIES:Hardware e Robótica(#ffffff/#A58400)
+CONTACT:Christiane Borges Santos
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20161020T160000Z
+DURATION:PT60M
+DTSTAMP:20161014T121305Z
+UID:118@5@142@1868
+CREATED:20161014T121305Z
+DESCRIPTION:Exposição de Hardwares (Drones\, Impressoras 3D e outras coisas
+ )
+LAST-MODIFIED:20161011T123051Z
+LOCATION:Dumont HackerSpace
+SEQUENCE:5
+STATUS:CONFIRMED
+SUMMARY:Exposição de Hardwares (Drones\, Impressoras 3D e outras coisas)
+TRANSP:TRANSPARENT
+CATEGORIES:Hardware e Robótica(#ffffff/#A58400)
+CONTACT:Dumont HackerSpace
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20161020T170000Z
+DURATION:PT60M
+DTSTAMP:20161014T121305Z
+UID:118@6@141@1874
+CREATED:20161014T121305Z
+DESCRIPTION:XCaller e RTOS para Arduino e microcontroladores de 8bits
+LAST-MODIFIED:20161011T123853Z
+LOCATION:Espaço Flahwl
+SEQUENCE:6
+STATUS:CONFIRMED
+SUMMARY:XCaller e RTOS para Arduino e microcontroladores de 8bits
+TRANSP:TRANSPARENT
+CATEGORIES:Hardware e Robótica(#ffffff/#A58400)
+CONTACT:Pacman (Alexandre Pereira)
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20161020T170000Z
+DURATION:PT60M
+DTSTAMP:20161014T121305Z
+UID:118@6@142@1868
+CREATED:20161014T121305Z
+DESCRIPTION:Exposição de Hardwares (Drones\, Impressoras 3D e outras coisas
+ )
+LAST-MODIFIED:20161011T123053Z
+LOCATION:Dumont HackerSpace
+SEQUENCE:6
+STATUS:CONFIRMED
+SUMMARY:Exposição de Hardwares (Drones\, Impressoras 3D e outras coisas)
+TRANSP:TRANSPARENT
+CATEGORIES:Hardware e Robótica(#ffffff/#A58400)
+CONTACT:Dumont HackerSpace
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20161020T180000Z
+DURATION:PT60M
+DTSTAMP:20161014T121305Z
+UID:118@7@141@1875
+CREATED:20161014T121305Z
+DESCRIPTION:UTFPR - Reciclando eletrônicos para aplicação na Física
+LAST-MODIFIED:20161011T123906Z
+LOCATION:Espaço Flahwl
+SEQUENCE:7
+STATUS:CONFIRMED
+SUMMARY:UTFPR - Reciclando eletrônicos para aplicação na Física
+TRANSP:TRANSPARENT
+CATEGORIES:Hardware e Robótica(#ffffff/#A58400)
+CONTACT:Pedro Luiz de Paula Filho
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20161020T180000Z
+DURATION:PT60M
+DTSTAMP:20161014T121305Z
+UID:118@7@142@1868
+CREATED:20161014T121305Z
+DESCRIPTION:Exposição de Hardwares (Drones\, Impressoras 3D e outras coisas
+ )
+LAST-MODIFIED:20161011T123054Z
+LOCATION:Dumont HackerSpace
+SEQUENCE:7
+STATUS:CONFIRMED
+SUMMARY:Exposição de Hardwares (Drones\, Impressoras 3D e outras coisas)
+TRANSP:TRANSPARENT
+CATEGORIES:Hardware e Robótica(#ffffff/#A58400)
+CONTACT:Dumont HackerSpace
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20161020T190000Z
+DURATION:PT60M
+DTSTAMP:20161014T121305Z
+UID:118@8@141@1877
+CREATED:20161014T121305Z
+DESCRIPTION:Mulheres no Mundo Maker
+LAST-MODIFIED:20161011T125508Z
+LOCATION:Espaço Flahwl
+SEQUENCE:8
+STATUS:CONFIRMED
+SUMMARY:Mulheres no Mundo Maker
+TRANSP:TRANSPARENT
+CATEGORIES:Hardware e Robótica(#ffffff/#A58400)
+CONTACT:Gedeane Kenshima
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20161020T190000Z
+DURATION:PT60M
+DTSTAMP:20161014T121305Z
+UID:118@8@142@1868
+CREATED:20161014T121305Z
+DESCRIPTION:Exposição de Hardwares (Drones\, Impressoras 3D e outras coisas
+ )
+LAST-MODIFIED:20161011T123056Z
+LOCATION:Dumont HackerSpace
+SEQUENCE:8
+STATUS:CONFIRMED
+SUMMARY:Exposição de Hardwares (Drones\, Impressoras 3D e outras coisas)
+TRANSP:TRANSPARENT
+CATEGORIES:Hardware e Robótica(#ffffff/#A58400)
+CONTACT:Dumont HackerSpace
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20161021T120000Z
+DURATION:PT60M
+DTSTAMP:20161014T121305Z
+UID:119@1@141@1799
+CREATED:20161014T121305Z
+DESCRIPTION:Atualmente \,fala-se tanto do conceito de TI Verde e das vantag
+ ens que\npode nos oferecer. A preocupação com o meio ambiente e a sustentab
+ ilidade tem sido\nuns dos assuntos recentes para abordarem\,como o uso e re
+ uso de equipamentos\neletrônicos possam ser extremamente importantes para a
+  destinação final de\nresíduos\,assim como \,possibilitar um menor impacto 
+ para o meio ambiente\, ao\nmesmo tempo em que garantimos também uma melhor 
+ economia e reaproveitamento\nde peças e equipamentos eletrônicos. Irei abor
+ dar algumas maneiras e técnicas de\nreaproveitamento de peças e sucatas par
+ a a criação de robôs e projetos em automação\ncom Arduino. Será demostrado 
+ ao vivo alguns exemplos de projetos feitos com\nmaterial reciclado eletrôni
+ co.
+LAST-MODIFIED:20161011T123935Z
+LOCATION:Espaço Flahwl
+SEQUENCE:1
+STATUS:CONFIRMED
+SUMMARY:Monte seu robô com sucatas utilizando Arduino!
+TRANSP:TRANSPARENT
+CATEGORIES:Hardware e Robótica(#ffffff/#A58400)
+CONTACT:Tiago Ribeiro Santos
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20161021T120000Z
+DURATION:PT60M
+DTSTAMP:20161014T121305Z
+UID:119@1@142@1876
+CREATED:20161014T121305Z
+DESCRIPTION:Impressão 3D de A a Z
+LAST-MODIFIED:20161011T124432Z
+LOCATION:Dumont HackerSpace
+SEQUENCE:1
+STATUS:CONFIRMED
+SUMMARY:Impressão 3D de A a Z
+TRANSP:TRANSPARENT
+CATEGORIES:Hardware e Robótica(#ffffff/#A58400)
+CONTACT:RazGriz (Guilherme Gonçalves Magalhães)\,Daniel Omar Basconcello Fi
+ lho
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20161021T130000Z
+DURATION:PT60M
+DTSTAMP:20161014T121305Z
+UID:119@2@141@1796
+CREATED:20161014T121305Z
+DESCRIPTION:Pesquisadores que estudam o aparecimento de Objetos Voadores Nã
+ o Identificados (OVNIs)\, os populares \"discos voadores\" também chamados 
+ UFOs (Unidentified Flying Objects) associam sua presença a fenômenos de nat
+ ureza eletromagnética\, como\, por exemplo a interferência em rádios e tele
+ visores\, parada de motores\, paralisação de relógios\, entre outros. Outro
+  ponto a ser discutido é a transmutação: que é o processo pelo qual se muda
+  a energia de um determinado\, átomo\, ser vivo\, grupo de seres vivos\, pl
+ aneta\, cosmos e energia universal. A transmutação ocorre pela elevação ou 
+ diminuição da voltagem da energia essencial à vida - denominada transmutaçã
+ o energética ou material. Os chacras são exemplos de pontos energéticos\, n
+ os seres humanos\, que possuem vibrações energéticas diferentes. Cada chacr
+ a possui uma vibração que se identifica com uma determinada cor ou frequênc
+ ia. Para discutir cientificamente com os temas\, irei mostrar alguns equipa
+ mentos eletrônicos - Hardwares Livres - que são capazes de detectar campos 
+ eletromagnéticos (perturbações eletromagnéticas) e vibrações/frequências en
+ ergéticas\; Softwares Livres capazes de detectar anomalias ou movimentos es
+ tranhos no céu\, fazendo a gravação de vídeo em alta qualidade - Exemplo: h
+ ttps://github.com/UFOID/UFO-Detector \; Um detector de campo eletromagnétic
+ o desenvolvido com a arduino.
+LAST-MODIFIED:20161011T123946Z
+LOCATION:Espaço Flahwl
+SEQUENCE:2
+STATUS:CONFIRMED
+SUMMARY:Eletrônica\, Hardware e Software Livre para detecção de OVNIs\, Cam
+ pos Eletromagnéticos e Transmutação de Energias
+TRANSP:TRANSPARENT
+CATEGORIES:Hardware e Robótica(#ffffff/#A58400)
+CONTACT:Danilo Rodrigues César
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20161021T130000Z
+DURATION:PT60M
+DTSTAMP:20161014T121305Z
+UID:119@2@142@1876
+CREATED:20161014T121305Z
+DESCRIPTION:Impressão 3D de A a Z
+LAST-MODIFIED:20161011T124434Z
+LOCATION:Dumont HackerSpace
+SEQUENCE:2
+STATUS:CONFIRMED
+SUMMARY:Impressão 3D de A a Z
+TRANSP:TRANSPARENT
+CATEGORIES:Hardware e Robótica(#ffffff/#A58400)
+CONTACT:RazGriz (Guilherme Gonçalves Magalhães)\,Daniel Omar Basconcello Fi
+ lho
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20161021T140000Z
+DURATION:PT60M
+DTSTAMP:20161014T121305Z
+UID:119@3@141@1787
+CREATED:20161014T121305Z
+DESCRIPTION:Robótica Educacional Livre – Uma nova proposta de aprendizagem 
+ para a Rede Municipal de Ensino de Barra Mansa
+LAST-MODIFIED:20161011T124231Z
+LOCATION:Espaço Flahwl
+SEQUENCE:3
+STATUS:CONFIRMED
+SUMMARY:Robótica Educacional Livre – Uma nova proposta de aprendizagem para
+  a Rede Municipal de Ensino de Barra Mansa
+TRANSP:TRANSPARENT
+CATEGORIES:Educação(#ffffff/#251F2F)
+CONTACT:Michelle Rezende
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20161021T140000Z
+DURATION:PT60M
+DTSTAMP:20161014T121305Z
+UID:119@3@142@1876
+CREATED:20161014T121305Z
+DESCRIPTION:Impressão 3D de A a Z
+LAST-MODIFIED:20161011T124437Z
+LOCATION:Dumont HackerSpace
+SEQUENCE:3
+STATUS:CONFIRMED
+SUMMARY:Impressão 3D de A a Z
+TRANSP:TRANSPARENT
+CATEGORIES:Hardware e Robótica(#ffffff/#A58400)
+CONTACT:RazGriz (Guilherme Gonçalves Magalhães)\,Daniel Omar Basconcello Fi
+ lho
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20161021T150000Z
+DURATION:PT60M
+DTSTAMP:20161014T121305Z
+UID:119@4@142@1876
+CREATED:20161014T121305Z
+DESCRIPTION:Impressão 3D de A a Z
+LAST-MODIFIED:20161011T124439Z
+LOCATION:Dumont HackerSpace
+SEQUENCE:4
+STATUS:CONFIRMED
+SUMMARY:Impressão 3D de A a Z
+TRANSP:TRANSPARENT
+CATEGORIES:Hardware e Robótica(#ffffff/#A58400)
+CONTACT:RazGriz (Guilherme Gonçalves Magalhães)\,Daniel Omar Basconcello Fi
+ lho
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20161021T160000Z
+DURATION:PT60M
+DTSTAMP:20161014T121305Z
+UID:119@5@141@1775
+CREATED:20161014T121305Z
+DESCRIPTION:Foto Oficial
+LAST-MODIFIED:20161011T114812Z
+LOCATION:Espaço Flahwl
+SEQUENCE:5
+STATUS:CONFIRMED
+SUMMARY:Foto Oficial
+TRANSP:TRANSPARENT
+CATEGORIES:Keynote(#000000/#B4B7DB)
+CONTACT:Cerimonial
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20161021T160000Z
+DURATION:PT60M
+DTSTAMP:20161014T121305Z
+UID:119@5@142@1775
+CREATED:20161014T121305Z
+DESCRIPTION:Foto Oficial
+LAST-MODIFIED:20161011T114814Z
+LOCATION:Dumont HackerSpace
+SEQUENCE:5
+STATUS:CONFIRMED
+SUMMARY:Foto Oficial
+TRANSP:TRANSPARENT
+CATEGORIES:Keynote(#000000/#B4B7DB)
+CONTACT:Cerimonial
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20161021T163000Z
+DURATION:PT60M
+DTSTAMP:20161014T121305Z
+UID:119@6@142@1868
+CREATED:20161014T121305Z
+DESCRIPTION:Exposição de Hardwares (Drones\, Impressoras 3D e outras coisas
+ )
+LAST-MODIFIED:20161011T124451Z
+LOCATION:Dumont HackerSpace
+SEQUENCE:6
+STATUS:CONFIRMED
+SUMMARY:Exposição de Hardwares (Drones\, Impressoras 3D e outras coisas)
+TRANSP:TRANSPARENT
+CATEGORIES:Hardware e Robótica(#ffffff/#A58400)
+CONTACT:Dumont HackerSpace
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20161021T173000Z
+DURATION:PT60M
+DTSTAMP:20161014T121305Z
+UID:119@7@142@1868
+CREATED:20161014T121305Z
+DESCRIPTION:Exposição de Hardwares (Drones\, Impressoras 3D e outras coisas
+ )
+LAST-MODIFIED:20161011T124453Z
+LOCATION:Dumont HackerSpace
+SEQUENCE:7
+STATUS:CONFIRMED
+SUMMARY:Exposição de Hardwares (Drones\, Impressoras 3D e outras coisas)
+TRANSP:TRANSPARENT
+CATEGORIES:Hardware e Robótica(#ffffff/#A58400)
+CONTACT:Dumont HackerSpace
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20161021T183000Z
+DURATION:PT60M
+DTSTAMP:20161014T121305Z
+UID:119@8@142@1868
+CREATED:20161014T121305Z
+DESCRIPTION:Exposição de Hardwares (Drones\, Impressoras 3D e outras coisas
+ )
+LAST-MODIFIED:20161011T124455Z
+LOCATION:Dumont HackerSpace
+SEQUENCE:8
+STATUS:CONFIRMED
+SUMMARY:Exposição de Hardwares (Drones\, Impressoras 3D e outras coisas)
+TRANSP:TRANSPARENT
+CATEGORIES:Hardware e Robótica(#ffffff/#A58400)
+CONTACT:Dumont HackerSpace
+END:VEVENT
+END:VCALENDAR
