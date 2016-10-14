@@ -4,9 +4,9 @@
 {
  "about":"start",
  "function":"loadTXT",
- "expiretimer":10000, 
- "data":{"value":"http://www.telasocial.com:8888/channel/latinoware.txt","about":"latinoware"}, "to":"next"
-}, 
+ "expiretimer":10000,
+ "data":{"value":"http://www.telasocial.com:8888/channel/firefox.txt","about":"latinoware"}, "to":"next"
+},
 {
  "about":"next",
  "function":"timer",
@@ -17,4 +17,3 @@
 ]
 
 }
-
