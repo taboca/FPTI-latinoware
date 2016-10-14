@@ -98,7 +98,8 @@ var transport =  {
         					  dataValue+=line2.substring(1,line2.length);
         					}
         				}
-        				sum = dataValue;
+                sum = dataValue;
+                sum = sum.replace(/\\,/gi,',');
         			}
 
         			if(line.indexOf('LOCATION')>-1) {
