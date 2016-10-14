@@ -91,25 +91,25 @@ var transport =  {
         				}
         			}
 
-        			if(line.indexOf('SUMMARY')>-1) {
-        				var dataValue = line.split('SUMMARY:')[1].toString();
-        				if(line2) {
-        					if(line2.indexOf("TRANSP")==-1) {
-        					  dataValue+=line2.substring(1,line2.length);
-        					}
-        				}
-                sum = dataValue;
-                sum = sum.replace(/\\,/gi,',');
-        			}
+              if(line.indexOf('SUMMARY')>-1) {
+                  var dataValue = line.split('SUMMARY:')[1].toString();
+                  if(line2) {
+                  	if(line2.indexOf("TRANSP")==-1) {
+                  	  dataValue+=line2.substring(1,line2.length);
+                  	}
+                  }
+                  sum = dataValue;
+                  sum = sum.replace(/\\,/gi,',');
+              }
 
-        			if(line.indexOf('LOCATION')>-1) {
-        				var dataValue = line.split('LOCATION:')[1];
-        				local = dataValue;
-        			}
+              if(line.indexOf('LOCATION')>-1) {
+                  var dataValue = line.split('LOCATION:')[1];
+                  local = dataValue;
+              }
 
         		}
         		if(valid) {
-        	 		this.addEvento(ye,mo,da,ho,mi,sum,eye,emo,eda,eho,emi, local);
+        	 		this.addEvento(ye, mo, da, ho, mi, sum, eye, emo, eda, eho, emi, local);
         		}
         		cc++;
         	}
