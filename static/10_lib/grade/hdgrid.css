@@ -1,0 +1,68 @@
+body {
+
+}
+
+.gv {
+  clear:both;
+}
+
+.gh {
+  display:inline;
+  float:left;
+}
+
+.inner {
+  overflow:hidden;
+}
+
+/*
+  background:rgb(70,70,70);
+  */
+.innerInnerCell {
+  margin-left:2px;
+  background: linear-gradient( 135deg, rgba(5,5,5,.1), rgba(5,5,5,0), rgba(255,255,255,.2));
+  height:100%;
+  font-size:17px;
+  font-weight:bold;
+  padding:3px;
+
+  text-overflow:ellipsis;
+  word-wrap:break-word;
+  color:black;
+}
+
+.innerNone {
+  background: linear-gradient( 180deg, rgba(5,5,5,.1), rgba(255,255,255,0), rgba(255,255,255,0), rgba(255,255,255,0));
+}
+
+.innerHour {
+  background: linear-gradient( 180deg, rgba(5,5,5,.1), rgba(255,255,255,0), rgba(255,255,255,0), rgba(255,255,255,0));
+  text-align:center;
+}
+
+.innerInnerHour {
+  margin-top:6px;
+}
+
+.innerHeader {
+}
+
+.innerInnerHeader {
+  margin-left:2px;
+  background: linear-gradient( 180deg, rgba(150,0,100,.2), rgba(150,0,100,.4));
+  height:50px;
+  border-top-left-radius:12px;
+  border-top-right-radius:12px;
+}
+
+.innerInnerHeader td {
+  padding:0px 10px 0 10px;
+  font-size:16px;
+  font-weight:bold;
+  text-align:center;
+  color:white;
+}
+
+.innerInnerCorner {
+  margin:.5em;
+}
