@@ -64,28 +64,28 @@ h1 {
 
 @keyframes heartbeat {
   0% {
-    transform: scale( .75);
+    transform: scale( );
   }
   20% {
-    transform: scale( 1);
+    transform: scale( 1.25);
   }
   40% {
-    transform: scale( .75);
-  }
-  60% {
     transform: scale( 1);
   }
+  60% {
+    transform: scale( 1.25);
+  }
   80% {
-    transform: scale( .75);
+    transform: scale( 1);
   }
   100% {
-    transform: scale( .75);
+    transform: scale( 1);
   }
 }
 
 #screen1 {
   animation: heartbeat 1s infinite;
-  transform-origin:750px 150px;
+  transform-origin:1000px 0px;
   opacity:.5;
-  margin-top:-50px;
+  margin-top:0px;
 }
