@@ -1,6 +1,6 @@
 var config = {
-   'page'   : 'http://www.telasocial.com:8888/static/wrappers/wide.html',
-   'width'  : 3840, 
+   'page'   : 'http://www.telasocial.com:8888/static/wrappers/right.html',
+   'width'  : 1920, 
    'height' : 1080
 };
 
