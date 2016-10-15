@@ -19,7 +19,6 @@ div.item {
     margin-top:20px;
     margin-left:.8em;
     margin-right:1em;
-    height:60px;
     overflow: hidden;
     text-overflow: ellipsis;
 }
