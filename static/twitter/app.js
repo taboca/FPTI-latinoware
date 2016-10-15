@@ -38,7 +38,7 @@
 var app =  {
 
 		feedURL   : URL_TWIT,
-		MAX_ITEMS : 14,
+		MAX_ITEMS : 6,
 		feed      : null,
 		total     : 0,
     flipflop  : true,
@@ -59,7 +59,7 @@ var app =  {
 				this.element.appendChild(first);
 				document.body.appendChild(this.element);
 				var self = this;
-				setTimeout( function(){self.updateFeed()},1500);
+				setTimeout( function(){self.updateFeed()},1999);
 		},
 
 		init : function () {
@@ -82,7 +82,7 @@ var app =  {
 				var counter = 0;
 				var self = this;
 				if(this.tweetQueue.length<1) {
-						setTimeout( function(){self.updateFeed()},19999);
+						setTimeout( function(){self.updateFeed()},1999);
 				} else {
 						var k = document.createElement('div');
 						k.className="item";
@@ -109,14 +109,14 @@ var app =  {
 								var obj = {'title':title,'desc':desc,'src':src, 'descFull':descFull};
 								//t8l.message('/main/destaques', JSON.stringify(obj));
 								//$($("div.item")[0]).animate({height:'hide'}, 1000, function() {  $($("div.item")[0]).remove() } );
-								setTimeout(function() { $($("div.item")[0]).remove() } ,2000);
-								setTimeout(function() { $($("div.itemshadow")[0]).remove() } ,2000);
+								setTimeout(function() { $($("div.item")[0]).remove() } ,1999);
+								setTimeout(function() { $($("div.itemshadow")[0]).remove() } ,1999);
 
 								$("div.item")[0].setAttribute("style","-moz-transition-property: margin-top;-moz-transition-duration:1s;margin-top:-55px ");
 
 								this.total--;
 						}
-						setTimeout( function () { self.render() }, 19999);
+						setTimeout( function () { self.render() }, 1999);
 				}
 		},
 
