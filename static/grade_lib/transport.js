@@ -1,6 +1,6 @@
 var transport =  {
-    timer_init  : 1000,
-    timer_loop  : 1000,
+    timer_init  : 6000,
+    timer_loop  : 6000,
     feed        : null,
     feedURL     : '',
     dataOut     : null,
