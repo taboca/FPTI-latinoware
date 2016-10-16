@@ -10,19 +10,20 @@
 export PATH=$PATH:/usr/local/bin
 export NODE_PATH=$NODE_PATH:/usr/local/lib/node_modules
 
+MEDIATOR_HOME=/home/tela/TelaSocial-Mediator
 
 export HOME=/root
 
 case "$1" in
   start)
-    /usr/local/bin/forever -p /root/.forever --sourceDir=/home/tela/TelaSocial-Mediator start mediator.js app ./scripts/httpserver.json
-    /usr/local/bin/forever -p /root/.forever --sourceDir=/home/tela/TelaSocial-Mediator start mediator.js app ./scripts/destaques.json
-    /usr/local/bin/forever -p /root/.forever --sourceDir=/home/tela/TelaSocial-Mediator start mediator.js app ./scripts/twitter-grab.json
-#   /usr/local/bin/forever -p /root/.forever --sourceDir=/home/tela/TelaSocial-Mediator start mediator.js app ./scripts/instagram.json
-    /usr/local/bin/forever -p /root/.forever --sourceDir=/home/tela/TelaSocial-Mediator start mediator.js app ./scripts/lapsi.json
-    /usr/local/bin/forever -p /root/.forever --sourceDir=/home/tela/TelaSocial-Mediator start mediator.js app ./scripts/lapsi-hardware.json
-    /usr/local/bin/forever -p /root/.forever --sourceDir=/home/tela/TelaSocial-Mediator start mediator.js app ./scripts/lapsi-minicursos.json
-    /usr/local/bin/forever -p /root/.forever --sourceDir=/home/tela/TelaSocial-Mediator start mediator.js app ./scripts/screenshots.json
+    /usr/local/bin/forever -p /root/.forever --sourceDir=$MEDIATOR_HOME start mediator.js app ./scripts/httpserver.json
+    /usr/local/bin/forever -p /root/.forever --sourceDir=$MEDIATOR_HOME start mediator.js app ./scripts/destaques.json
+    /usr/local/bin/forever -p /root/.forever --sourceDir=$MEDIATOR_HOME start mediator.js app ./scripts/twitter-grab.json
+#   /usr/local/bin/forever -p /root/.forever --sourceDir=$MEDIATOR_HOME start mediator.js app ./scripts/instagram.json
+    /usr/local/bin/forever -p /root/.forever --sourceDir=$MEDIATOR_HOME start mediator.js app ./scripts/lapsi.json
+    /usr/local/bin/forever -p /root/.forever --sourceDir=$MEDIATOR_HOME start mediator.js app ./scripts/lapsi-hardware.json
+    /usr/local/bin/forever -p /root/.forever --sourceDir=$MEDIATOR_HOME start mediator.js app ./scripts/lapsi-minicursos.json
+    /usr/local/bin/forever -p /root/.forever --sourceDir=$MEDIATOR_HOME start mediator.js app ./scripts/screenshots.json
 
     ;;
   stop)
