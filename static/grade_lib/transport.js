@@ -33,7 +33,7 @@ var transport =  {
         var self  = this;
         this.dataOut = new Array();
 
-        if(result.error) { };
+        if(result.error) { alert('error'); };
 
         var text = result.xmlDocument;
         var items = text.split('BEGIN:VEVENT');
