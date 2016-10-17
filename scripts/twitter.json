@@ -3,6 +3,7 @@
     {
      "about":"start",
      "function":"mergeTwitter",
+     "expiretimer":10000,
      "data":{"tag":"latinoware", "target":"twitter"}, "to":"next"
     },
     {
