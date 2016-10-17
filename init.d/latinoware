@@ -16,6 +16,8 @@ MEDIATOR_HOME=/home/tela/l8e/25_mediator/TelaSocial-mediator
 
 export HOME=/root
 
+rm /root/.forever/*.log
+
 case "$1" in
   start)
     /usr/local/bin/forever -p /root/.forever --sourceDir=$MEDIATOR_HOME start mediator.js app ./scripts/httpserver.json

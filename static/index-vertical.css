@@ -83,8 +83,10 @@ h1 {
   }
 }
 
+/*
+animation: heartbeat 1s infinite;
+*/
 #screen1 {
-  animation: heartbeat 1s infinite;
   transform-origin:1000px 0px;
   opacity:.5;
   margin-top:0px;
