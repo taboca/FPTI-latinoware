@@ -23,12 +23,12 @@ case "$1" in
     /usr/local/bin/forever -p /root/.forever --sourceDir=$MEDIATOR_HOME start mediator.js app ./scripts/httpserver.json
     /usr/local/bin/forever -p /root/.forever --sourceDir=$MEDIATOR_HOME start mediator.js app ./scripts/destaques.json
     /usr/local/bin/forever -p /root/.forever --sourceDir=$MEDIATOR_HOME start mediator.js app ./scripts/twitter-grab.json
-#   /usr/local/bin/forever -p /root/.forever --sourceDir=$MEDIATOR_HOME start mediator.js app ./scripts/instagram.json
+    /usr/local/bin/forever -p /root/.forever --sourceDir=$MEDIATOR_HOME start mediator.js app ./scripts/fotos.json
     /usr/local/bin/forever -p /root/.forever --sourceDir=$MEDIATOR_HOME start mediator.js app ./scripts/lapsi.json
     /usr/local/bin/forever -p /root/.forever --sourceDir=$MEDIATOR_HOME start mediator.js app ./scripts/lapsi-hardware.json
     /usr/local/bin/forever -p /root/.forever --sourceDir=$MEDIATOR_HOME start mediator.js app ./scripts/lapsi-minicursos.json
     /usr/local/bin/forever -p /root/.forever --sourceDir=$MEDIATOR_HOME start mediator.js app ./scripts/screenshots.json
-
+    
     ;;
   stop)
     exec /usr/local/bin/forever stopall
