@@ -1,0 +1,36 @@
+
+.showbase {
+    position:absolute;
+    width:100%;
+    text-align:center;
+}
+
+
+.showcase {
+    position:absolute;
+    background:url(./bg_1200.jpg) 50% 0px no-repeat;
+    background-size:1200px;
+    height:1080px;
+    width:100%;
+}
+
+.base {
+    position:relative;
+    height:1080px;
+    overflow:hidden;
+}
+
+.showvideo1 {
+    overflow:hidden;
+    width:340px; height:604px;
+    margin-top:203px;
+    margin-left:265px;
+    box-shadow:10px 10px 10px black;
+    -moz-transform-origin: 50% 400px;
+    -webkit-transform-origin: 50% 400px;
+    transform-origin: 50% 400px ;
+    -moz-transform:perspective(1100px) rotateY(-20deg) rotateX(0deg) rotateZ(0deg);;
+    -webkit-transform:perspective(1100px) rotateY(-20deg) rotateX(0deg) rotateZ(0deg);;
+    transform:perspective(1100px) rotateY(-36deg) rotateX(0deg) rotateZ(-1.5deg);;
+
+}

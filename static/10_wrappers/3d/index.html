@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <title>Demonstração</title>
+
+    <link rel="stylesheet" href="3d.css" type="text/css" media="screen, projection"/>
+
+  </head>
+  <body >
+
+    <div id='topcolors' ></div>
+
+    <div class='container'>
+
+      <h1>Latinoware demo overlay</h1>
+
+      <a href='javascript:'  onclick='document.getElementById("menu_board_frame_loader").src="slide.html"'>Screen 1</a>
+      <a href='javascript:'  onclick='document.getElementById("menu_board_frame_loader").src="slide_b.html"'>Screen b</a>
+
+      <div  class='base'>
+        <div class='showcase' >
+        </div>
+          <div class='showbase' >
+             <iframe id='menu_board_frame_loader' frameborder='no' class='showvideo1' src='slide.html' >
+             </iframe>
+          </div>
+
+      </div>
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+  </body>
+</html>
