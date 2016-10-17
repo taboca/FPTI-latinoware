@@ -1,19 +1,15 @@
 {
-"rules": [
-
-{
- "about":"start",
- "function":"spawnJS",
- "data":{"value":"mergeTwitter.js","about":"latinoware"}, "to":"next"
-}, 
-{
- "about":"next",
- "function":"timer",
- "data":{"value":190000},
- "to":"start"
+  "rules": [
+    {
+     "about":"start",
+     "function":"mergeTwitter2",
+     "data":{"tag":"latinoware", "target":"twitter"}, "to":"next"
+    },
+    {
+     "about":"next",
+     "function":"timer",
+     "data":{"value":190000},
+     "to":"start"
+    }
+  ]
 }
-
-]
-
-}
-
