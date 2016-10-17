@@ -126,14 +126,14 @@ var app =  {
 		var text = result.xmlDocument;
 		var objs = $.parseJSON(text);
 		for( var k in objs) {
-			var src = (objs[k].images.standard_resolution);
+			var src = (objs[k].url);
 			var text= '';
 			var from ='';
 			if(objs[k].caption) {
 			  text = (objs[k].caption.text);
 			  from = (objs[k].caption.from.username);
 			}
-            this.picQueue.push({"url":src.url,"text":text, "from":from});
+            this.picQueue.push({"url":src,"text":text, "from":from});
 
 		}
 		this.kickFadeIn();
