@@ -2,7 +2,7 @@
   "rules": [
     {
      "about":"start",
-     "function":"mergeTwitter2",
+     "function":"mergeTwitter",
      "data":{"tag":"latinoware", "target":"twitter"}, "to":"next"
     },
     {
