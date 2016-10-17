@@ -10,7 +10,7 @@
 export PATH=$PATH:/usr/local/bin
 export NODE_PATH=$NODE_PATH:/usr/local/lib/node_modules
 
-MEDIATOR_HOME=/home/tela/TelaSocial-Mediator
+MEDIATOR_HOME=/home/tela/l8e/25_mediator/TelaSocial-Mediator
 
 export HOME=/root
 
