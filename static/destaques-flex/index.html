@@ -1,0 +1,111 @@
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <link media="screen, projection" type="text/css" href="../css/index.css" rel="stylesheet">
+    <script src="../lib/jquery-min.js" type="text/javascript"></script>
+    <script src="../t8l/proxy.js" type="text/javascript"></script>
+    <script src="../t8l/ui.js" type="text/javascript"></script>
+
+    <script src="../lib/masonry.pkgd.min.js"></script>
+
+    <script>
+      	t8l.init(t8l.STORE);
+    </script>
+
+    <script src="../const.js" type="text/javascript"></script>
+    <script src="app.js" type="text/javascript"></script>
+
+    <!-- maybe this can be moved to afterProxyRun... -->
+    <script type="text/javascript">
+     t8l.loaded(function () {
+    	app.init();
+    	app.start();
+     });
+    </script>
+
+  <style>
+
+        body {
+            width:100%;
+            font-size:25px;
+            padding:6px;
+            padding-top:0;
+            background-color:transparent;
+            padding-bottom:0;
+            text-align: left;
+        }
+
+        .grid-item {
+            width: 520px;
+        }
+
+        .grid-double {
+            width: 400px;
+
+        }
+
+        .twitPanel {
+          background:rgba(255,255,255,1);
+          margin:10px;
+          padding:10px;
+          height:220px;
+
+          display:flex;
+          flex-flow:column;
+          border-radius:6px;
+          box-shadow:3px 3px 3px rgba(0,0,0,.4);
+        }
+
+        div.header {
+            background:url(../vendor/twitter.png) 100% 0% no-repeat;
+            flex:auto;
+
+        }
+
+        .header img {
+            margin-left:-10px;
+            margin-top:-10px;
+        }
+
+        div h3 {
+          font-size:24px;
+          font-weight:bold;
+          color:black;
+          margin:0;
+          margin-bottom:7px;
+        }
+        div.desc {
+          font-size:22px;
+          margin-bottom:5px;
+          flex:auto;
+          margin-top:0px;
+          margin-left:70px;
+          text-align:left;
+          text-overflow:ellipsis;
+        }
+
+        div.timeDate {
+          text-align:left;
+          flex:1;
+          margin-left:70px;
+          font-size:12px;
+          color:#888;
+        }
+
+        div i {
+          color:gray;
+          font-size:24px;
+        }
+
+        div img {
+          float:left;margin-right:10px;width:66px;
+        }
+
+  </style>
+
+  </head>
+  <body>
+      <div class="grid js-masonry">
+      </div>
+  </body>
+</html>

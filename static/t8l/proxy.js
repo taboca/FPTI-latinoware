@@ -10,7 +10,9 @@ var t8l = {
     GOOGLE:1, JQUERY:2, STORE:3,
     message: function (refWidget,obj) {
 	    var id = refWidget.split('/')[2];
+
     	window.parent.document.getElementById(id).contentWindow.postMessage(obj,'*');
+
     },
     feeds: {
        Feed: null
@@ -73,8 +75,8 @@ var t8l_Feed = function (url) {
                var result = { xmlDocument:xml }
                functionSuccess(result);
             }, error: function (xhr, ajaxOptions, thrownError) {
-               //alert(document.location + " error: " + xhr.throwError);
-	             var result = { error: { code: xhr.status, message: thrownError } }
+               dump(document.location + " error: " + xhr.throwError);
+	       var result = { error: { code: xhr.status, message: thrownError } }
                functionSuccess(result);
             }});
 	}

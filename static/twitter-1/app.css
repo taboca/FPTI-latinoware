@@ -1,0 +1,46 @@
+body {
+  font-weight:bold;
+  padding:10px;
+  padding-top:0;
+}
+
+div.itemshadow {
+    opacity:.5;
+    margin-top:20px;
+    height:2px;
+    width:100%;
+    display:none;
+}
+
+div.item {
+    color:#444;
+    margin-top:20px;
+    margin-left:.8em;
+    margin-right:1em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+div h3 {
+    font-size:34px;
+    font-weight:bold;
+    color:black;
+    margin:0;
+    margin-bottom:10px;
+}
+
+div.desc {
+    font-size:15pt ! important;
+    margin-bottom:5px;
+    color:#000 ! important;
+    overflow:hidden;
+    text-overflow:ellipsis;
+}
+
+div.header {
+		background:url(../vendor/twitter.png) 100% 50% no-repeat;
+}
+
+div img {
+	float:left;margin-right:10px;
+}
