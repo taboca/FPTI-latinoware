@@ -4,14 +4,14 @@
 {
  "about":"start",
  "function":"loadTestError",
- "expiretimer":10000,
+ "expiretimer":5000,
  "data":{"value":"http://tela3:8888/static/current.jpg","about":"tela3.jpg"},
  "to":"next"
 },
 {
  "about":"next",
  "function":"timer",
- "data":{"value":15000},
+ "data":{"value":5000},
  "to":"start"
 }
 
