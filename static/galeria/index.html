@@ -9,33 +9,33 @@
 
     <script src="../const.js" type="text/javascript"></script>
     <script src="app.js" type="text/javascript"></script>
- 
-    
-    <!-- maybe this can be moved to afterProxyRun... --> 
+
+
+    <!-- maybe this can be moved to afterProxyRun... -->
     <script type="text/javascript">
-     t8l.loaded(function () { 
+     t8l.loaded(function () {
         app.init();
         app.start();
-     }); 
-   
+     });
+
     </script>
 
     <style>
-    span { 
+    span {
 		padding:12px;
-   	} 
-    /* 
-	img { box-shadow: 3px 3px 5px black; } 
+   	}
+    /*
+	img { box-shadow: 3px 3px 5px black; }
     */
 
-div.base { 
+div.base {
   position:relative;
   width:230px;
   height:230px;
 
 }
 
-div.innerBase { 
+div.innerBase {
     position:absolute;
   width:230px;
   height:230px;
@@ -49,11 +49,11 @@ div.innerBase {
     -webkit-flex-flow: column;
     -moz-flex-flow: column;
     -ms-flex-flow: column;
-    -o-flex-flow: column; 
+    -o-flex-flow: column;
     flex-flow: column;
 
 }
-div.innerSpace { 
+div.innerSpace {
     -webkit-flex:2 1 auto;
     -moz-flex:2 1 auto;
     width:100%  ;
@@ -61,16 +61,15 @@ div.innerSpace {
     -o-flex:2 1 auto;
     flex:2 1 auto;
 
-} 
+}
 
-/* 
+/*
 
 */
-div.innerCaption { 
+div.innerCaption {
   color:white;
-  background: -moz-linear-gradient( top,rgba(0,0,0,.4) ,  rgba(0,0,0,1));
+  background: linear-gradient( top,rgba(0,0,0,.4) ,  rgba(0,0,0,1));
   font-weight:bold;
-  padding:5px;
   height:0px;
     -webkit-flex:1 2 auto;
     -moz-flex:1 2 auto;
@@ -79,40 +78,40 @@ div.innerCaption {
     flex:1 2 auto;
 
 }
-div.innerImage { 
+div.innerImage {
   position:absolute;
 }
 
-	img.loading { 
-    -moz-transition-property:-moz-transform; 
-    -moz-transform: rotateY(0deg) rotateX(90deg) perspective(170px); 
-    -moz-transition-duration:2s; 
+	img.loading {
+    transition-property:transform;
+    transform: rotateY(0deg) rotateX(90deg) perspective(170px);
+    transition-duration:1s;
 		opacity:0;
-	} 
+	}
 
-  img.loading { 
-    -moz-transition-property:-moz-transform; 
-    -moz-transform: rotateY(0deg) rotateX(90deg) perspective(170px); 
-    -moz-transition-duration:2s; 
+  img.loading {
+    transition-property:transform;
+    transform: rotateY(0deg) rotateX(90deg) perspective(170px);
+    transition-duration:1s;
     opacity:0;
-  } 
+  }
 
     /* no styles accel
     */
-	img.active { 
-    -moz-transition-property:-moz-transform; 
-    -moz-transform: rotateY(0deg) rotateX(0deg) perspective(170px); 
-    -moz-transition-duration:2s; 
+	img.active {
+    transition-property:transform;
+    transform: rotateY(0deg) rotateX(0deg) perspective(170px);
+    transition-duration:1s;
 		opacity:1;
-	} 
-  img.fadeout { 
-    -moz-transition-property:-moz-transform; 
-    -moz-transform: rotateY(0deg) rotateX(90deg) perspective(17px); 
-    -moz-transition-duration:2s; 
+	}
+  img.fadeout {
+    transition-property:transform;
+    transform: rotateY(0deg) rotateX(90deg) perspective(17px);
+    transition-duration:1s;
     opacity:1;
-  } 
+  }
 
-	body { padding:6px;padding-top:0 ; background-color:transparent;padding-bottom:0;text-align: center} 
+	body { padding:6px;padding-top:0 ; background-color:transparent;padding-bottom:0;text-align: center}
 
     </style>
   </head>
