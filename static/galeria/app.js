@@ -127,7 +127,6 @@ var app =  {
 		var objs = $.parseJSON(text);
 		for( var k in objs) {
       if (k<16) {
-        console.log('Json k: ', k)
   			var src = (objs[k].url);
   			var text= '';
   			var from ='';
