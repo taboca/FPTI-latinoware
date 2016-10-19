@@ -37,7 +37,9 @@ var app = {
           // event A = 8am - 10am, room a
           // event B = 9am - 11am, room b
           // event C = 10am - 12pm, room c
-          this.gridFillForDay(currentDay);
+          //console.log('dday ', (new Date().getDate()));
+          var isToday = parseInt(dday)===(new Date().getDate());
+          this.gridFillForDay(currentDay, isToday);
           // into a specification for the grid type
           // str to divs inline API
           // which wants something like this
@@ -79,7 +81,7 @@ var app = {
       var cutChars = false;
       var buffer2 = '';
       var collectBuffer = '';
-      var one= true;
+      var one = true;
       var time_start=0; var time_end=0;
 
       for(var k = 0; k<this.gridBuffer.length; k++) {
@@ -135,7 +137,7 @@ var app = {
 
     },
 
-    gridFillForDay: function (currentDay) {
+    gridFillForDay: function (currentDay, isToday) {
 
       var innerAll = "";
       // warning ( inverted )
@@ -179,7 +181,8 @@ var app = {
         slicesSequence[slicesCount++]=hour; // this is for later use, we simply counting
         for( var i in eventBegins[hour] ) {
           var item = eventBegins[hour][i];
-          item.cellMap=mapCell({'type':'event','value':item , 'begin': strToMins(item.inicio),'end': strToMins(item.fim), flag:false});
+          //console.log('isToday: ', isToday);
+          item.cellMap=mapCell({'type':'event','value':item , 'begin': strToMins(item.inicio),'end': strToMins(item.fim), flag:false, flagToday: isToday});
           if(!updateColumns[item.local]) {
             updateColumns[item.local]=new Array();
           }
@@ -285,14 +288,17 @@ var app = {
             var addStyle='';
             if(probeElement.flag) {
               delta=delta+these.chunkHourSpace;
-              addStyle+='background:rgb(0,0,70);color:white ! important';
+              addStyle+='background:rgb(0,70,0);color:white ! important';
               //marcio
             }
             var dateTodayNow = new Date();
+
             var thresholdHourNow = dateTodayNow.getHours()*60+dateTodayNow.getMinutes();
+
             if(probeElement.flagToday) {
+
               if(probeElement.begin<thresholdHourNow) {
-                addStyle='background:rgb(0,0,170);color:white ! important;';
+                addStyle='background:rgb(0,0,70);color:white ! important;';
               }
               if(probeElement.end<thresholdHourNow) {
                 addStyle='background:rgb(0,70,0);color:white ! important;';
