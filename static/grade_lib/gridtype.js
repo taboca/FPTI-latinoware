@@ -7,84 +7,106 @@
    cssHeight=40;
    var gClassName = 'inner';
 
-   function grid(str,cols,target, className) {
-	gClassName = className;
-    gStr = str;
-    gCols= cols;
-  	var indexLine=0;
-    var parseUpToLine=gStr.length;
-	currEl = document.getElementById(target);
-    clusterFlip(false, currEl, 0,str,cols);
+   function grid(str,cols,target, className, jobEndCallback) {
+      gClassName = className;
+      gStr = str;
+      gCols= cols;
+      var indexLine=0;
+      var parseUpToLine=gStr.length;
+      currEl = document.getElementById(target);
+      clusterFlip(false, currEl, 0,str,cols, jobEndCallback);
    }
 
    var flipFlop = true;
    var classType ='';
-   function clusterFlip(flipFlop, currEl, index, str,shift) {
-    var range = str.length/shift;
-    while(index<range) {
-      if(str!='') {
-        if(flipFlop) {
-           classType = 'c gh';
-        } else {
-           classType = 'c gv';
+   function clusterFlip(flipFlop, currEl, index, str,shift, jobEndCallback) {
+      var range = str.length/shift;
+
+      function continuerender(index, str, cb, cbEnd) {
+        if(index>=range) {
+
         }
-        var el = document.createElement("div");
-        el.setAttribute("class", classType);
-        currEl.appendChild(el);
-        index = clusterQuery(flipFlop, el,str,shift);
-		str = str.substr(index*shift, str.length);
-	  } else { break;}
-  	}
+        else {
+            if(str!='') {
+                if(flipFlop) {
+                   classType = 'c gh';
+                } else {
+                   classType = 'c gv';
+                }
+
+                var el = document.createElement("div");
+                el.setAttribute("class", classType);
+                currEl.appendChild(el);
+
+                setTimeout( function takeYourTime() {
+                  //console.log('cQ: ', flipFlop, el, str, shift);
+                  index = clusterQuery(flipFlop, el, str, shift, cbEnd);
+                  str = str.substr(index*shift, str.length);
+                  cb(index, str, cb, cbEnd);
+                },0);
+
+          } else {
+            cbEnd();
+            return;
+          }
+
+        }
+
+      };
+      var bindedContinueRender = continuerender.bind(this);
+      //console.log(jobEndCallback);
+      bindedContinueRender(index, str, bindedContinueRender, jobEndCallback);
+
    }
 
    // For rows
    // index, shift  ( cols or lines ), indexLine, parseUpToLine = indexLine+cols;
 
-   function clusterQuery(flipflop, el, range,shift) {
-	var hashChars = hashSum(range, shift);
-	var indexLine = 0;
-	var parseUpToLine = indexLine+1;
-	var oIndex = indexLine;
-	var buff = '';
-	//alert('max ' + parseUpToLine);
-	var pixel = 0;
-	while(indexLine<parseUpToLine) {
-		var cellUpToLine = hashChars[range[pixel]]-1;
-		buff += range[pixel];
-		if(cellUpToLine>=parseUpToLine) {
-			parseUpToLine=cellUpToLine+1;
-		}
-		pixel++;
-		if(pixel%shift == 0) { indexLine++ }
-	}
-	var o = flipString(buff,buff.length/shift, shift);
-	var checkReduce = reduce(o,shift);
-	if(!checkReduce) {
-         	clusterFlip(!flipflop, el, 0, o, buff.length/shift);
-	} else {
-		var lines = o.length/shift;
+   function clusterQuery(flipflop, el, range, shift, cbEnd) {
+    	var hashChars = hashSum(range, shift);
+    	var indexLine = 0;
+    	var parseUpToLine = indexLine+1;
+    	var oIndex = indexLine;
+    	var buff = '';
+    	//alert('max ' + parseUpToLine);
+    	var pixel = 0;
+    	while(indexLine<parseUpToLine) {
+    		var cellUpToLine = hashChars[range[pixel]]-1;
+    		buff += range[pixel];
+    		if(cellUpToLine>=parseUpToLine) {
+    			parseUpToLine=cellUpToLine+1;
+    		}
+    		pixel++;
+    		if(pixel%shift == 0) { indexLine++ }
+    	}
+    	var o = flipString(buff,buff.length/shift, shift);
+    	var checkReduce = reduce(o,shift);
+    	if(!checkReduce) {
+             	clusterFlip(!flipflop, el, 0, o, buff.length/shift, cbEnd);
+    	} else {
+    		var lines = o.length/shift;
 
-		var charFromStr =o[0];
-   		el.innerHTML='<div class="'+gClassName+'" id="'+charFromStr+'">qq</div>';
-		var yHeight = cssHeight*lines;
-		var xWidth = cssWidth*shift;
-		if(flipflop) {
-		}
-		//el.setAttribute('style','overflow:hidden;width:'+cssWidth+'px;');
-		//el.setAttribute('style','height:'+yHeight+'px');
-        }
-        return parseUpToLine;
+    		var charFromStr =o[0];
+       	el.innerHTML='<div class="'+gClassName+'" id="'+charFromStr+'">.</div>';
+    		var yHeight = cssHeight*lines;
+    		var xWidth = cssWidth*shift;
+    		if(flipflop) {
+    		}
+    		//el.setAttribute('style','overflow:hidden;width:'+cssWidth+'px;');
+    		//el.setAttribute('style','height:'+yHeight+'px');
+            }
+            return parseUpToLine;
    }
 
    function reduce(str,cols) {
-	var ss = str[0];
-	var cCount = 0;
-	for(var k=0;k<str.length;k++) {
-		if(k % cols==0) { cCount++ }
-		var c = str[k];
-		if(ss!=c) return false;
-	}
-	return { c: cCount }
+      var ss = str[0];
+      var cCount = 0;
+      for(var k=0;k<str.length;k++) {
+      	if(k % cols==0) { cCount++ }
+      	var c = str[k];
+      	if(ss!=c) return false;
+      }
+      return { c: cCount }
    }
 
    function flipString(inputStr, lines, cols) {

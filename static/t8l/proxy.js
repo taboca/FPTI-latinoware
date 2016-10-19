@@ -75,7 +75,7 @@ var t8l_Feed = function (url) {
                var result = { xmlDocument:xml }
                functionSuccess(result);
             }, error: function (xhr, ajaxOptions, thrownError) {
-               dump(document.location + " error: " + xhr.throwError);
+               console.log(document.location + " error: " + xhr.throwError);
 	       var result = { error: { code: xhr.status, message: thrownError } }
                functionSuccess(result);
             }});

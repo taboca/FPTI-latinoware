@@ -270,105 +270,111 @@ var app = {
       var uniqueClassName = 'inner'+parseInt(Math.random()*1000);
 
       if(buffer.length>cols+1) {
-        grid(buffer, cols+1, cName, uniqueClassName);
+
+        var that = this;
+        grid(buffer, cols+1, cName, uniqueClassName, function () {
+
+
+          var proposedHeight=0;
+          var these = that;
+          $('.'+uniqueClassName).each(function() {
+            var probeElement = charToElement[$(this).attr('id')];
+            if(probeElement)  {
+              if(probeElement.type=='event') {
+                var el = probeElement.value;
+                $(this).html("<div class='innerInnerCell'>"+doFilter(el.descricao)+"</div>");
+                $(this).addClass('inner');
+                var delta = probeElement.end-probeElement.begin;
+
+                var addStyle='';
+                if(probeElement.flag) {
+                  delta=delta+these.chunkHourSpace;
+                  addStyle+='background:rgb(0,70,0);color:white ! important';
+                  //marcio
+                }
+                var dateTodayNow = new Date();
+
+                var thresholdHourNow = dateTodayNow.getHours()*60+dateTodayNow.getMinutes();
+
+                if(probeElement.flagToday) {
+
+                  if(probeElement.begin<thresholdHourNow) {
+                    addStyle='background:rgb(0,0,70);color:white ! important;';
+                  }
+                  if(probeElement.end<thresholdHourNow) {
+                    addStyle='background:rgb(0,70,0);color:white ! important;';
+                  }
+                }
+
+                if(el.descricao.indexOf('*')>-1) {
+                  addStyle='background:-moz-linear-gradient( -90deg, rgb(150,30,30), rgb(60,30,30), rgb(60,30,30));';
+                }
+
+                //if(delta==0) { delta=200 }
+                $(this).attr("style",';width:'+cssWidth+'px;height:'+these.fixScaleHeight(delta)+'px;');
+                $(this).find('div').attr("style",addStyle);
+              }
+
+              if(probeElement.type == 'none') {
+                var delta = probeElement.value;
+                if(probeElement.flag) {
+                  delta=these.chunkHourSpace;
+                }
+
+                $(this).addClass('innerNone');
+                $(this).attr("style",'width:'+cssWidth+'px;height:'+these.fixScaleHeight(delta)+'px;');
+                $(this).html('');
+              }
+
+              if(probeElement.type == 'slices') {
+                var hour = probeElement.value;
+                var delta = probeElement.height;
+
+                if(!delta) { delta=these.chunkHourSpace; }
+                $(this).addClass('innerHour');
+                var localWidth='50px';
+                var hourSliceId = 'hourSlice_'+Math.random();
+                var strHH = ''+Math.floor(parseInt(hour)/60);
+                var strMM = ''+parseInt(hour)%60;
+                if(strMM<10) { strMM+='0'; }
+                var strProposal = strHH+':'+strMM;
+
+                if(probeElement.flag) {
+                  strProposal='';
+                  delta=these.chunkHourSpace;
+                }
+                $(this).attr("style",'width:'+localWidth+';height:'+these.fixScaleHeight(delta)+'px;');
+                $(this).html('<div id="'+hourSliceId+'" class="innerInnerHour" style="display:inline-block;padding:0px"><div>'+strProposal+'</div></div>');
+
+                // This -20 is due to the padding and the 4 is for borders?
+                var elWidth = document.getElementById(hourSliceId).offsetWidth;
+              }
+
+              if(probeElement.type == 'header') {
+                var room = probeElement.value;
+                $(this).addClass('innerHeader');
+                $(this).attr("style",'width:'+cssWidth+'px;');
+                //$(this).html('<table border="0" class="innerInnerHeader"><tr><td valign="middle">'+room+'</td></tr></table>');
+                $(this).html('<div class="innerInnerHeader"><table height="100%"><tr><td align="center" valign="middle" class="">'+room+'</td></tr></table></div>');
+
+              }
+
+              if(probeElement.type == 'corner') {
+                var localWidth='50px';
+                var room = probeElement.value;
+                $(this).attr("style",'width:'+localWidth+';');
+                $(this).html('<div class="innerInnerCorner" style="-moz-transform-orifin:0px 0px; -moz-transform:rotate(-90deg)"> </div>');
+              }
+
+            }
+          });
+
+          //window.parent.parent.setHeight('middle',$('body').height());
+
+
+        });
       }
 
-      var proposedHeight=0;
-      var these = this;
-      $('.'+uniqueClassName).each(function() {
-        var probeElement = charToElement[$(this).attr('id')];
-        if(probeElement)  {
-
-          if(probeElement.type=='event') {
-            var el = probeElement.value;
-            $(this).html("<div class='innerInnerCell'>"+doFilter(el.descricao)+"</div>");
-            $(this).addClass('inner');
-            var delta = probeElement.end-probeElement.begin;
-
-            var addStyle='';
-            if(probeElement.flag) {
-              delta=delta+these.chunkHourSpace;
-              addStyle+='background:rgb(0,70,0);color:white ! important';
-              //marcio
-            }
-            var dateTodayNow = new Date();
-
-            var thresholdHourNow = dateTodayNow.getHours()*60+dateTodayNow.getMinutes();
-
-            if(probeElement.flagToday) {
-
-              if(probeElement.begin<thresholdHourNow) {
-                addStyle='background:rgb(0,0,70);color:white ! important;';
-              }
-              if(probeElement.end<thresholdHourNow) {
-                addStyle='background:rgb(0,70,0);color:white ! important;';
-              }
-            }
-
-            if(el.descricao.indexOf('*')>-1) {
-              addStyle='background:-moz-linear-gradient( -90deg, rgb(150,30,30), rgb(60,30,30), rgb(60,30,30));';
-            }
-
-            //if(delta==0) { delta=200 }
-            $(this).attr("style",';width:'+cssWidth+'px;height:'+these.fixScaleHeight(delta)+'px;');
-            $(this).find('div').attr("style",addStyle);
-          }
-
-          if(probeElement.type == 'none') {
-            var delta = probeElement.value;
-            if(probeElement.flag) {
-              delta=these.chunkHourSpace;
-            }
-
-            $(this).addClass('innerNone');
-            $(this).attr("style",'width:'+cssWidth+'px;height:'+these.fixScaleHeight(delta)+'px;');
-            $(this).html('');
-          }
-
-          if(probeElement.type == 'slices') {
-            var hour = probeElement.value;
-            var delta = probeElement.height;
-
-            if(!delta) { delta=these.chunkHourSpace; }
-            $(this).addClass('innerHour');
-            var localWidth='50px';
-            var hourSliceId = 'hourSlice_'+Math.random();
-            var strHH = ''+Math.floor(parseInt(hour)/60);
-            var strMM = ''+parseInt(hour)%60;
-            if(strMM<10) { strMM+='0'; }
-            var strProposal = strHH+':'+strMM;
-
-            if(probeElement.flag) {
-              strProposal='';
-              delta=these.chunkHourSpace;
-            }
-            $(this).attr("style",'width:'+localWidth+';height:'+these.fixScaleHeight(delta)+'px;');
-            $(this).html('<div id="'+hourSliceId+'" class="innerInnerHour" style="display:inline-block;padding:0px"><div>'+strProposal+'</div></div>');
-
-            // This -20 is due to the padding and the 4 is for borders?
-            var elWidth = document.getElementById(hourSliceId).offsetWidth;
-          }
-
-          if(probeElement.type == 'header') {
-            var room = probeElement.value;
-            $(this).addClass('innerHeader');
-            $(this).attr("style",'width:'+cssWidth+'px;');
-            //$(this).html('<table border="0" class="innerInnerHeader"><tr><td valign="middle">'+room+'</td></tr></table>');
-            $(this).html('<div class="innerInnerHeader"><table height="100%"><tr><td align="center" valign="middle" class="">'+room+'</td></tr></table></div>');
-
-          }
-
-          if(probeElement.type == 'corner') {
-            var localWidth='50px';
-            var room = probeElement.value;
-            $(this).attr("style",'width:'+localWidth+';');
-            $(this).html('<div class="innerInnerCorner" style="-moz-transform-orifin:0px 0px; -moz-transform:rotate(-90deg)"> </div>');
-          }
-
-        }
-      });
-
-      //window.parent.parent.setHeight('middle',$('body').height());
 
     },
 
