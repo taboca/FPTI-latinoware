@@ -126,15 +126,17 @@ var app =  {
 		var text = result.xmlDocument;
 		var objs = $.parseJSON(text);
 		for( var k in objs) {
-			var src = (objs[k].url);
-			var text= '';
-			var from ='';
-			if(objs[k].caption) {
-			  text = (objs[k].caption);
-			  from = (objs[k].author);
-			}
-      this.picQueue.push({"url":src,"text":text, "from":from});
-
+      if (k<16) {
+        console.log('Json k: ', k)
+  			var src = (objs[k].url);
+  			var text= '';
+  			var from ='';
+  			if(objs[k].caption) {
+  			  text = (objs[k].caption);
+  			  from = (objs[k].author);
+  			}
+        this.picQueue.push({"url":src,"text":text, "from":from});
+      }
 		}
 		this.kickFadeIn();
 	}
