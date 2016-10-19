@@ -7,8 +7,7 @@ $(document).ready(function() {
       iframe pages are ready. */
 
    //register("/main/footer", "cabecalho", "./patrocinadores/index.html?mode=tv", iframeTemplate);
-   register("/main/topheader", "topo", "./header-vertical/index.html", iframeTemplate);
-   register("/main/topheader", "topo", "./header-vertical/index.html", iframeTemplate);
+   register("/main/topheader", "topo", "./header-vertical-plain/index.html", iframeTemplate);
    register("/main/topmiddle", "destaques", "./destaques/index.html", iframeTemplate);
    register("/main/transparent1", "twitter8", "./twitter-1/index.html", iframeTemplate);
    //register("/main/bottomsection2", "twitter", "./twitter/index.html", iframeTemplate);

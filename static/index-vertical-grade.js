@@ -1,7 +1,5 @@
 $(document).ready(function() {
 
-    setTimeout('startEngine()',1000);
-
     register("/main/middle"    , "meio"  , "./grade/index.html", iframeTemplate);
     register("/main/middle2"   , "meio2" , "./grade-minicursos/index.html", iframeTemplate);
     register("/main/topheader" , "topo"  , "./header-vertical/index.html", iframeTemplate);
