@@ -125,7 +125,7 @@ try {
 }
 
 var iframeTemplate = {
-   data: '<iframe frameborder="no" style="height:100%;width:100%;overflow:hidden;" class="gv"   src="" id="" ></iframe>'
+   data: '<iframe frameborder="no" style="height:100%;width:100%;border:0;overflow:hidden;" class="gv"   src="" id="" ></iframe>'
 }
 
 var cc = {
