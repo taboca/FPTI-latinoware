@@ -5,7 +5,7 @@ var app =  {
 	grid 	        : null,
 	elementQueue  : null,
 	msnry         : null,
-	timer         : 5500,
+	timer         : 15500,
 	totalElements : 6,
 	cycle         : 0,
 
