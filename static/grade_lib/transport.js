@@ -61,6 +61,7 @@ var transport =  {
           					da = dataValue.substring(6,8);
           					ho = dataValue.substring(9,11);
           					mi = dataValue.substring(11,13);
+
           					valid=true;
           				}
           			}
@@ -128,14 +129,14 @@ var transport =  {
 			this.dataOut[daStr]=new Array();
 		}
 		try {
-			ho-=3;
+			ho-=2;
 			if(ho<0) {
 				ho=24+ho;
 				var newD=parseInt(daStr-1);
 				daStr=newD;
 			}
 
-			eho-=3;
+			eho-=2;
 			if(eho<0) {
 				eho=24+eho;
 			}
