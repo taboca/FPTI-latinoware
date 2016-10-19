@@ -130,10 +130,10 @@ var app =  {
 			var text= '';
 			var from ='';
 			if(objs[k].caption) {
-			  text = (objs[k].caption.text);
-			  from = (objs[k].caption.from.username);
+			  text = (objs[k].caption);
+			  from = (objs[k].author);
 			}
-            this.picQueue.push({"url":src,"text":text, "from":from});
+      this.picQueue.push({"url":src,"text":text, "from":from});
 
 		}
 		this.kickFadeIn();
