@@ -91,3 +91,7 @@ animation: heartbeat 1s infinite;
   opacity:.5;
   margin-top:0px;
 }
+
+.shademask {
+   -webkit-mask-image: -webkit-gradient(linear, center top, center bottom, color-stop(0.00,  rgba(0,0,0,1) ),  color-stop(0.80,  rgba(0,0,0,1) ),  color-stop(1.00,  rgba(0,0,0,0)));
+}
