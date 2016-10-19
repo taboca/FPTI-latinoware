@@ -1,14 +1,14 @@
 
 var app =  {
-    feed        : null,
-	  cycle: 0,
-    feedURL     : URL_FOTOS,
+    feed         : null,
+	  cycle        : 0,
+    feedURL      : URL_FOTOS,
     refElement   : null,
     imageNumber  : 0,
     element      : null,
     picWidth     : 230,
     picHeight    : 230,
-    timer        : 1000,
+    timer        : 100,
     picQueue     : null,
     totalElements: 4,
     refContainers: null,
@@ -54,9 +54,7 @@ var app =  {
 			var envelope = this.picQueue.pop();
 			var t = envelope.url;
 			var eText = envelope.text;
-			var eFrom = envelope.from;
-			var eText = '';
-			var eFrom = '';
+			var eFrom = envelope.author;
 
 			this.refContainerCycle++;
 			if(this.refContainerCycle == this.totalElements) {
@@ -66,7 +64,7 @@ var app =  {
 			these = this;
 			$(currentContainer).find("img").attr('class','fadeout');
 			setTimeout(function () {
-				currentContainer.innerHTML = "<div class='base'> <div class='innerImage'><img id='posterimage"+these.imageNumber+"' src='"+t+"' class='loading'></div><div class='innerBase'><div class='innerSpace'></div><div class='innerCaption'>"+eText+"</div></div></div>";
+				currentContainer.innerHTML = "<div class='base'> <div class='innerImage'><img id='posterimage"+these.imageNumber+"' src='"+t+"' class='loading'></div><div class='innerBase'> <div class='innerAuthor'>"+eFrom+"</div><<div class='innerSpace'></div><div class='innerCaption'>"+eText+"</div></div></div>";
 				these.doExpire = true;
 				//setTimeout(function () { these.tryExpire() }, these.timer*20);
 				setTimeout(function () { these.imageLoaded() }, these.timer)
@@ -129,12 +127,12 @@ var app =  {
       if (k<16) {
   			var src = (objs[k].url);
   			var text= '';
-  			var from ='';
+  			var author ='';
   			if(objs[k].caption) {
   			  text = (objs[k].caption);
-  			  from = (objs[k].author);
+  			  author = (objs[k].author);
   			}
-        this.picQueue.push({"url":src,"text":text, "from":from});
+        this.picQueue.push({"url":src,"text":text, "author":author});
       }
 		}
 		this.kickFadeIn();

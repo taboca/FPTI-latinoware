@@ -31,26 +31,26 @@
 div.base {
   position:relative;
   width:230px;
-  height:230px;
 
 }
 
 div.innerBase {
-    position:absolute;
+  position:absolute;
   width:230px;
   height:230px;
 
-    display: -webkit-flex;
-    display: -moz-flex;
-    display: -ms-flex;
-    display: -o-flex;
-    display: flex;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  background:rgba(70,20,60,.8);
 
-    -webkit-flex-flow: column;
-    -moz-flex-flow: column;
-    -ms-flex-flow: column;
-    -o-flex-flow: column;
-    flex-flow: column;
+  -webkit-flex-flow: column;
+  -moz-flex-flow: column;
+  -ms-flex-flow: column;
+  -o-flex-flow: column;
+  flex-flow: column;
 
 }
 div.innerSpace {
@@ -68,18 +68,35 @@ div.innerSpace {
 */
 div.innerCaption {
   color:white;
-  background: linear-gradient( top,rgba(0,0,0,.4) ,  rgba(0,0,0,1));
+  padding:1em;
+
+  background-image:linear-gradient( 180deg, rgba(0,0,0,.3), rgba(0,0,0,.2));
   font-weight:bold;
-  height:0px;
     -webkit-flex:1 2 auto;
     -moz-flex:1 2 auto;
     -ms-flex:1 2 auto;
     -o-flex:1 2 auto;
     flex:1 2 auto;
-
+    z-index:1001;
 }
+
+div.innerAuthor {
+  padding:1em;
+  color:white;
+  height:1em;
+  background-image:linear-gradient( 180deg, rgba(0,0,0,.3), rgba(0,0,0,.2));
+  font-weight:bold;
+    -webkit-flex:1 2 auto;
+    -moz-flex:1 2 auto;
+    -ms-flex:1 2 auto;
+    -o-flex:1 2 auto;
+    flex:1 2 auto;
+    z-index:1001;
+}
+
 div.innerImage {
   position:absolute;
+  z-index:1000;
 }
 
 	img.loading {
