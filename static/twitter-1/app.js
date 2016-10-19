@@ -2,8 +2,8 @@ var app =  {
 
 	feedURL     : URL_TWIT,
 	MAX_ITEMS   : 4,
-	loopTimer   : 5500,
-	shortTimer  : 2000,
+	loopTimer   : 15500,
+	shortTimer  : 12000,
 	feed        : null,
 	total       : 0,
 
