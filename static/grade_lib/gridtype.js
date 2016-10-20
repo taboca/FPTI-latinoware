@@ -43,7 +43,7 @@
                   index = clusterQuery(flipFlop, el, str, shift, cbEnd);
                   str = str.substr(index*shift, str.length);
                   cb(index, str, cb, cbEnd);
-                },0);
+                },50);
 
           } else {
             cbEnd();
