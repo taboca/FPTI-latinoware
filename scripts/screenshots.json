@@ -3,7 +3,7 @@
 
 { "about":"start",
  "function":"timer",
- "data":{"value":60000},
+ "data":{"value":15000},
  "to":"start/checked"
 },
 {
@@ -17,4 +17,3 @@
 ]
 
 }
-
