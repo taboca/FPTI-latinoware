@@ -6,7 +6,7 @@ var app =  {
 	elementQueue  : null,
 	msnry         : null,
 	timer         : 15500,
-	totalElements : 8,
+	totalElements : 6,
 	cycle         : 0,
 
 	start : function() {
