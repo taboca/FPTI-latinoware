@@ -10,9 +10,7 @@ var t8l = {
     GOOGLE:1, JQUERY:2, STORE:3,
     message: function (refWidget,obj) {
 	    var id = refWidget.split('/')[2];
-
     	window.parent.document.getElementById(id).contentWindow.postMessage(obj,'*');
-
     },
     feeds: {
        Feed: null
