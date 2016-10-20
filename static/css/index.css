@@ -1,5 +1,5 @@
 
-html, body { margin:0; padding:0; overflow:hidden }
+html, body { margin:0; padding:0; overflow:hidden;  cursor: none;  }
 
 h2 { padding:1em ! important; color:rgba(0,0,0,.4) ! important ; font-size:20px ! important}
 
