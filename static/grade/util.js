@@ -1,7 +1,7 @@
 
 
 function doFilter(str, authorContainer) {
-    //return str;
+    return str;
     $('#temp').html(str);
     var str = $('#temp').text();
     var fontSize = INNER_FONT_SIZE+3;
