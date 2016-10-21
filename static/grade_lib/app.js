@@ -2,7 +2,7 @@
 // returns unicode characters so we have a lot of possible table values
 
 var charToElement = new Array();
-var gridCharUsed=32000;
+var gridCharUsed=41;
 function mapCell(storeElement) {
   var proposalUTFChar = getUnicodeCharacter(gridCharUsed++);
   charToElement[proposalUTFChar]=storeElement;
