@@ -8,9 +8,10 @@ var app =  {
     element      : null,
     picWidth     : 220,
     picHeight    : 220,
-    timer        : 1500,
+    timer        : 40,
     picQueue     : null,
     totalElements: 16,
+    firstTimeCounter: 0,
     refContainers: null,
     refContainerCycle : -1,
 
@@ -35,7 +36,7 @@ var app =  {
 		}
 
 		var scopedThis = this;
-       	setTimeout( function () { scopedThis.popPic() }, this.timer);
+  	setTimeout( function () { scopedThis.popPic() }, this.timer);
 	},
 
 	init : function() {
@@ -64,6 +65,11 @@ var app =  {
 			these = this;
 			$(currentContainer).find("img").attr('class','fadeout');
 			setTimeout(function () {
+
+        these.firstTimeCounter++;
+        if(these.firstTimeCounter> these.totalElements) {
+          these.timer = 1000;
+        }
 				currentContainer.innerHTML = "<div class='base'> <div class='innerImage'><img id='posterimage"+these.imageNumber+"' src='"+t+"' class='loading'></div><div class='innerBase'> <div class='innerAuthor'>"+eFrom+"</div><div class='innerSpace'></div><div class='innerCaption'>"+eText+"</div></div></div>";
 				these.doExpire = true;
 				//setTimeout(function () { these.tryExpire() }, these.timer*20);
