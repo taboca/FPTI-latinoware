@@ -130,7 +130,7 @@ var app =  {
 		var text = result.xmlDocument;
 		var objs = $.parseJSON(text);
 		for( var k in objs) {
-      if (k<16) {
+      if (k<32) {
   			var src = (objs[k].url);
   			var text= 'CC-by 4.0 — ';
   			var author ='';
