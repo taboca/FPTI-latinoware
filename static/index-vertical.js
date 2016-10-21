@@ -9,11 +9,11 @@ $(document).ready(function() {
    //register("/main/footer", "cabecalho", "./patrocinadores/index.html?mode=tv", iframeTemplate);
    register("/main/topheader", "topo", "./header-vertical-plain/index.html", iframeTemplate);
    register("/main/topmiddle", "destaques", "./destaques/index.html", iframeTemplate);
-   register("/main/transparent1", "twitter8", "./twitter-1/index.html", iframeTemplate);
+   //register("/main/transparent1", "twitter8", "./twitter-1/index.html", iframeTemplate);
    //register("/main/bottomsection2", "twitter", "./twitter/index.html", iframeTemplate);
-   register("/main/bottomsection2", "twitterChannel", "./destaques-flex/index.html", iframeTemplate);
-   register("/main/topmiddleright", "noticias", "./noticias/index.html", iframeTemplate);
+   //register("/main/bottomsection2", "twitterChannel", "./destaques-flex/index.html", iframeTemplate);
    register("/main/bottomsection", "identica", "./galeria/index.html", iframeTemplate);
+   register("/main/topmiddleright", "noticias", "./noticias/index.html", iframeTemplate);
 
    //register("/main/hora", "hora", "./tempo/index.html", iframeTemplate);
    //register("/main/data", "data", "./tempo/date.html", iframeTemplate);

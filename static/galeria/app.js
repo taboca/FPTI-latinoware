@@ -10,7 +10,7 @@ var app =  {
     picHeight    : 220,
     timer        : 1500,
     picQueue     : null,
-    totalElements: 8,
+    totalElements: 16,
     refContainers: null,
     refContainerCycle : -1,
 
@@ -64,7 +64,7 @@ var app =  {
 			these = this;
 			$(currentContainer).find("img").attr('class','fadeout');
 			setTimeout(function () {
-				currentContainer.innerHTML = "<div class='base'> <div class='innerImage'><img id='posterimage"+these.imageNumber+"' src='"+t+"' class='loading'></div><div class='innerBase'> <div class='innerAuthor'>"+eFrom+"</div><<div class='innerSpace'></div><div class='innerCaption'>"+eText+"</div></div></div>";
+				currentContainer.innerHTML = "<div class='base'> <div class='innerImage'><img id='posterimage"+these.imageNumber+"' src='"+t+"' class='loading'></div><div class='innerBase'> <div class='innerAuthor'>"+eFrom+"</div><div class='innerSpace'></div><div class='innerCaption'>"+eText+"</div></div></div>";
 				these.doExpire = true;
 				//setTimeout(function () { these.tryExpire() }, these.timer*20);
 				setTimeout(function () { these.imageLoaded() }, these.timer)
