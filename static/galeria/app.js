@@ -132,10 +132,10 @@ var app =  {
 		for( var k in objs) {
       if (k<16) {
   			var src = (objs[k].url);
-  			var text= '';
+  			var text= 'CC-by 4.0 — ';
   			var author ='';
   			if(objs[k].caption) {
-  			  text = (objs[k].caption);
+  			  text+= (objs[k].caption);
         }
         if(objs[k].author) {
   			  author = (objs[k].author);
