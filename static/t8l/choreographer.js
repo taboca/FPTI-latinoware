@@ -26,9 +26,26 @@ function prepareSets() {
 		}
 		sets[ancestorKey].push(curr);
 	}
+
+	var kList = new Array();
+	var kCounter = 0;
 	for(var k in sets[current]) {
-		createChilds(sets[current][k]);
+		kList[kCounter++]=k;
 	}
+
+	kCounter = 0;
+
+	function forAllKeys() {
+		if(kCounter<kList.length) {
+			createChilds(sets[current][kList[kCounter++]]);
+			setTimeout(function () {
+				forAllKeys();
+			}, 1000);
+		}
+	}
+
+	forAllKeys();
+
 }
 
 function createChilds(item) {
