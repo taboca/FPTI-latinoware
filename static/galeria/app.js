@@ -136,6 +136,8 @@ var app =  {
   			var author ='';
   			if(objs[k].caption) {
   			  text = (objs[k].caption);
+        }
+        if(objs[k].author) {
   			  author = (objs[k].author);
   			}
         this.picQueue.push({"url":src,"text":text, "author":author});
